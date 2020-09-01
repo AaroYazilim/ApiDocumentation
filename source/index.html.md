@@ -3,7 +3,7 @@ title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell: cURL
-  - javascript: NodeJS
+  - javascript: Node.js
   - csharp: C#
   - python: Python
   - java: Java
@@ -48,23 +48,30 @@ curl --location --request POST 'https://erp.aaro.com.tr/Token' \
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://erp.aaro.com.tr/Token',
-  'headers': {
-    'Content-Type': 'application/x-www-form-urlencoded'
-  },
-  form: {
-    'grant_type': 'password',
-    'username': 'YOURUSERNAME',
-    'password': 'YOURPASSWORD'
-  }
-};
-request(options, function (error, response) { 
-  if (error) throw new Error(error);
-  console.log(response.body);
+var axios = require('axios');
+var qs = require('qs');
+var data = qs.stringify({
+'grant_type': 'password',
+'username': 'KULLANICIADINIZ',
+'password': 'SIFRENIZ' 
 });
+var config = {
+  method: 'post',
+  url: 'https://erp.aaro.com.tr/Token',
+  headers: { 
+    'Content-Type': 'application/x-www-form-urlencoded', 
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
 
 ```
 
@@ -115,12 +122,13 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/Token")
 
 ```json
 {
-    "access_token": "oAeRcRS_QPBSrCk7jO3jwUppqt6Sk-TwToiqYx3gVRSKq3hNoHp0vBM5v5hjWI-_HAgjWbzCeSK70yvXURrBJKLFWH2jYHn4kMmrIwOtXYrVBYoMqjgyKp3BklEhSB5OE2NrV1YEfsHR4BXOGUSb4ev-qMTIgVB2xA5iSomYaqp6o4m4Ggbo2mX_uRooak_CEQIjSm7vapNKKlnouTbhixBrch1mNCSO3YWtvzLGAFm5iu1Sbhk83yGKLtmBE3nVPZ1xYS4MAZ_WzEz_s_WbZ2ITE9ht5d_dP-YM2fd5Nhq88_0fDITHquDI3UCVkLjXbFo43nqZMeilFICklFoGjPn_vgaFqU1ev8r85VqPVEXhenrk8qGzU5FFAtuT-8sVkl4JzTXDYh8xDRvCz8WXcCO_AXJJjDmCMp3VWA9oh7UQC3r7i5Pv5sG2uX8Q0d6_sMEAsQh5uEutuU73MCMZBK2XNsQGCdfgKXSuSRtcHZ2O2IJ57dRrsGgImNyy0jivylocqAXQE_F7kJD0f5AmSO7lJHp6mnZg9mTOfE-QHLg",
+    "access_token": "token-code",
     "token_type": "bearer",
     "expires_in": 43199,
-    "userName": "YOURUSERNAME",
-    ".issued": "Fri, 03 Jul 2020 12:55:40 GMT",
-    ".expires": "Sat, 04 Jul 2020 00:55:40 GMT"
+    "refresh_token": "refresh-token-code",
+    "userName": "KULLANICI-ADINIZ",
+    ".issued": "Tue, 01 Sep 2020 11:25:25 GMT",
+    ".expires": "Tue, 01 Sep 2020 23:25:25 GMT"
 }
 
 ```
@@ -142,32 +150,36 @@ Kimlik doğrulama işleminin başarılı olması durumunda bir adet kimlik jeton
 
 ```shell
 
-curl --location --request GET 'https://erp.aaro.com.tr/api/Stok?Durum=true&SiralamaKisiti=10&Sayfa=1&SayfaSatirSayisi=1&TipID=105001' \
+curl --location --request GET 'https://erp.aaro.com.tr/api/Stok' \
 --header 'Authorization: Bearer YOURTOKEN'
 
 ```
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'GET',
-  'url': 'https://erp.aaro.com.tr/api/Stok?Durum=true&SiralamaKisiti=10&Sayfa=1&SayfaSatirSayisi=1&TipID=105001',
-  'headers': {
+var axios = require('axios');
+
+var config = {
+  method: 'get',
+  url: 'https://erp.aaro.com.tr/api/Stok',
+  headers: {
     'Authorization': 'Bearer YOURTOKEN'
   }
 };
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
 
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
 
 ```
 
 ```csharp
 
-var client = new RestClient("https://erp.aaro.com.tr/api/Stok?Durum=true&SiralamaKisiti=10&Sayfa=1&SayfaSatirSayisi=1&TipID=105001");
+var client = new RestClient("https://erp.aaro.com.tr/api/Stok");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Authorization", "Bearer YOURTOKEN");
@@ -182,7 +194,7 @@ import requests
 
 import requests
 
-url = "https://erp.aaro.com.tr/api/Stok?Durum=true&SiralamaKisiti=10&Sayfa=1&SayfaSatirSayisi=1&TipID=105001"
+url = "https://erp.aaro.com.tr/api/Stok"
 
 payload = {}
 headers = {
@@ -199,7 +211,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok?Durum=true&SiralamaKisiti=10&Sayfa=1&SayfaSatirSayisi=1&TipID=105001")
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok")
   .header("Authorization", "Bearer YOURTOKEN")
   .asString();
 
@@ -212,45 +224,45 @@ HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok?Du
 {
     "SayfalandirmaBilgisi": {
         "Sayfa": 1,
-        "SayfaSatirSayisi": 10,
-        "ToplamSatirSayisi": 126,
-        "ToplamSayfaSayisi": 13,
+        "SayfaSatirSayisi": 100,
+        "ToplamSatirSayisi": 1,
+        "ToplamSayfaSayisi": 1,
         "OncekiSayfaVarMi": false,
-        "SonrakiSayfaVarMi": true,
-        "SayfaSatirSayisiAktifSayfada": 10
+        "SonrakiSayfaVarMi": false,
+        "SayfaSatirSayisiAktifSayfada": 1
     },
     "Model": [
         {
-            "StokID": 345,
-            "StokKodu": "111111147",
-            "StokAdi": "3M Scotch Brıte Pad Red",
-            "StokKisaKodu": "111111147",
-            "StokKisaAdi": "3M Scotch Brıte Pad Red",
+            "StokID": 307,
+            "StokKodu": "000000000000047",
+            "StokAdi": "Çam Kesme Tahtası Budaksız",
+            "StokKisaKodu": "000000000000047",
+            "StokKisaAdi": "Çam Kesme Tahtası A/B",
             "Durum": true,
-            "CevirimBrm2": null,
-            "CevirimBrm3": null,
-            "Kalinlik": 0.000000,
-            "En": 0.000000,
-            "Boy": 0.000000,
-            "Yogunluk": 0.000000,
-            "Agirlik": 0.000000,
-            "OlsTar": "2020-07-03T14:53:53.387",
-            "DgsTar": "2020-07-03T14:53:53.387",
+            "CevirimBrm2": 0.000000,
+            "CevirimBrm3": 0.000000,
+            "Kalinlik": 1.800000,
+            "En": 40.000000,
+            "Boy": 50.000000,
+            "Yogunluk": 0.650000,
+            "Agirlik": 2.500000,
+            "OlsTar": "2020-07-03T07:53:43.66",
+            "DgsTar": "2020-09-01T12:18:35.723",
             "OnayDurum": 1,
             "TipID": 105001,
             "TipAdi": "Stok",
             "SubeID": 1,
             "SubeKodu": "SRKT.SUBE",
-            "SubeAdi": "Şubem",
+            "SubeAdi": "Merkez",
             "SirketID": 1,
-            "SirketKodu": "SRKT",
-            "SirketAdi": "Şirketim",
+            "SirketKodu": "Aaro",
+            "SirketAdi": "Aaro ",
             "StokMuhasebeID": 201,
             "StokMuhasebeKodu": "STOK",
             "StokMuhasebeAdi": "Stok 153, 600, 150, 151, 152, 601, 610, 611",
-            "StokVergiID": 39,
-            "StokVergiKodu": "KDV54",
-            "StokVergiAdi": "Stok(KDV 54)",
+            "StokVergiID": 1,
+            "StokVergiKodu": "KDV18",
+            "StokVergiAdi": "KDV % 18",
             "Brm1ID": 1,
             "Brm1Kodu": "AD",
             "Brm1Adi": "Adet",
@@ -260,9 +272,9 @@ HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok?Du
             "Brm3ID": null,
             "Brm3Kodu": null,
             "Brm3Adi": null,
-            "Kod1ID": null,
-            "Kod1Kodu": null,
-            "Kod1Adi": null,
+            "Kod1ID": 5,
+            "Kod1Kodu": "HB",
+            "Kod1Adi": "Hobi",
             "OlsID": 4,
             "OlsKodu": "MSK",
             "OlsAdi": "Şamil",
@@ -273,13 +285,15 @@ HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok?Du
             "Etiket1Adi": null,
             "SablonID": null,
             "SablonKodu": null,
-            "SablonAdi": null
+            "SablonAdi": null,
+            "Miktar": -100.000000,
+            "ResimAdresi": "https://erp.aaro.com.tr/Data/ResimAnahtarli/T3001S307B3.jpg?wpTDlMKMGQkLwovDhMK8wq%2fDosOkw5pFw5fDhMKawqbDtcKWw5PChMKLwq89ShLCm8K2wo%2fCpcOQwqvCnQnDkMODwonCpcOBwo7DjsKAwpXCiwIcRMKXw4DCicKow4HCtsOUCMOdw4vCjsKpw5bDkQfCocOYw4BSOiXDl8Od",
+            "EsnekAramaKisiti": "000000000000047 Çam Kesme Tahtası Budaksız 957195719571"
         }
     ],
     "Mesajlar": {},
     "Sonuc": true,
     "MesajlarTumu": ""
-}
 ```
 
 Bu uç nokta ile stoklardaki ürünleri toplu olarak ya da belirli bir kısıt ile getirebilirsiniz.
@@ -294,35 +308,22 @@ Bu uç nokta ile stoklardaki ürünleri toplu olarak ya da belirli bir kısıt i
 
 Parameter | Değer | Tanım
 --------- | ----------- | ---------
-StokID | Integer | Belirtilen ID ile ürünü getirmektedir.
-StokKodu | String | Belirtilen stok koduna göre ürün veya ürünleri getirmektedir.
-StokKisaKodu | String | Belirtilen stok kısa koduna göre ürün veya ürünleri getirmektedir.
-StokAdi | String | Belirtilen stok adına göre ürün veya ürünleri getirmektedir.
-StokKisaAdi | String | Belirtilen stok kısa adına göre ürün veya ürünleri getirmektedir.
-Durum | Boolean | True ise aktif, false ise pasif ürünleri getirmektedir.
-TipID |Integer | Dökümantasyondaki TipID listesini inceleyiniz.
-SubeID | Integer | Şube ID'sine göre ürünleri getirmektedir.
-SubeKodu | String | Şube koduna göre ürünleri getirmektedir.
-SubeAdi | String | Şube adına göre ürünleri getirmektedir.
-SirketID | Integer | Şirket ID'sine göre ürünleri getirmektedir.
-SirketKodu | String | Şirket koduna göre ürünleri getirmektedir.
-SirketAdi | String | Şirket adına göre ürünleri getirmektedir.
-StokMuhasebeID | Integer | Stok Muhasebe ID'sine göre ürünleri getirmektedir.
-StokMuhasebeKodu | String | Stok Muhasebe koduna göre ürünleri getirmektedir.
-StokMuhasebeAdi | String | Stok Muhasebe adına göre ürünleri getirmektedir.
-StokVergiID | Integer | Stok Vergi ID'sine göre ürünleri getirmektedir.
-StokVergiKodu | String |Stok Vergi koduna göre ürünleri getirmektedir.
-StokVergiAdi | String | Stok Vergi adına göre ürünleri getirmektedir.
-OlsID | Integer | Oluşturan ID'sine göre ürünleri getirmektedir.
-OlsKodu | String | Oluşturan koduna göre ürünleri getirmektedir.
-OlsAdi | String | Oluşturan adına göre ürünleri getirmektedir.
-SiralamaKisiti | Integer | ***
+SiralamaKisiti | String | Gelen veriyi sıralamak için kullanılır. Durum, StokID gibi kolon adları verilmelidir.
 Sayfa | Integer | Kaç sayfa ürün getirmek istediğiniz
-SayfaSatirSayisi |Integer | Getirilen sayfadaki ürün limiti. (Aşağıdaki örnek çıktıda uzun liste olmaması için SayfaSatirSayisi=1 girilerek çağrıda bulunulmuştur) 
+SayfaSatirSayisi |Integer | Getirilen sayfadaki ürün limiti.
+StokID | Integer | Belirtilen ID ile ürünü getirmektedir.
+Durum | Boolean | True ise aktif, false ise pasif ürünleri getirmektedir.
+TipID |Integer | Dökümantasyondaki TipID listesini inceleyiniz. Ürün tiplerinin
+SubeID | Integer | Şube ID'sine göre ürünleri getirmektedir.
+SirketID | Integer | Şirket ID'sine göre ürünleri getirmektedir.
+StokMuhasebeID | Integer | Stok Muhasebe ID'sine göre ürünleri getirmektedir.
+StokVergiID | Integer | Stok Vergi ID'sine göre ürünleri getirmektedir.
+OlsID | Integer | Stoğu Oluşturan kişi ID'sine göre ürünleri getirmektedir.
 
 
 
-## Stok Ürünü Oluştur
+
+## Stok Ekle
 
 ```shell
 
@@ -360,20 +361,27 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1',
-  'headers': {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"StokID":-1,"SubeID":1,"SirketID":1,"StokKodu":"000000000000044","StokAdi":"kolonya","StokKisaKodu":"000000000000044","StokKisaAdi":"kolonya","Durum":true,"TipID":105001,"StokMuhasebeID":201,"StokVergiID":1,"Brm1ID":1,"Brm2ID":null,"Brm3ID":null,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":10,"En":10,"Boy":10,"Yogunluk":3,"Agirlik":5,"Kod1ID":null,"Etiket1ID":null,"SablonID":null})
+var axios = require('axios');
+var data = JSON.stringify({"StokID":-1,"SubeID":1,"SirketID":1,"StokKodu":"000000000000049","StokAdi":"kolonya","StokKisaKodu":"000000000000049","StokKisaAdi":"kolonya","Durum":true,"TipID":105001,"StokMuhasebeID":201,"StokVergiID":1,"Brm1ID":1,"Brm2ID":null,"Brm3ID":null,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":10,"En":10,"Boy":10,"Yogunluk":3,"Agirlik":5,"Kod1ID":null,"Etiket1ID":null,"SablonID":null});
 
+var config = {
+  method: 'post',
+  url: 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
 };
-request(options, function (error, response) { 
-  if (error) throw new Error(error);
-  console.log(response.body);
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
 });
+
 
 
 ```
@@ -470,7 +478,7 @@ Parametre | Değer | Tanım
 --------- | ----------- | ---------
 KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir.
 
-### Sorguda Gönderilen JSON açıklaması
+### Sorgu Body JSON açıklaması
 
 Parametre | Örnek Değer | Tanım | ZorunluMu
 --------- | ------- | ----------- | -----------
@@ -478,26 +486,26 @@ StokID | -1 | Eklenilen ürünün stok ID'sidir. -1 girildiği takdirde rasgele 
 SubeID | 1 | Stoğun bulunduğu şubenin ID'sidir. | Evet
 SirketID | 1 | Stoğun ait olduğu şirketin ID'sidir. | Evet
 StokKodu | "HRD.KPKL.00164" | Stoğun detaylı kodudur. | Evet
-StokAdi | "Hırdavat Kapı Kolu Burak Oda Rozetli Saten" | Stoğun detaylı adıdır | Evet
+StokAdi | "Hırdavat Kapı Kolu Burak Oda Rozetli Saten" | Stoğun gözüken adıdır. | Evet
 StokKisaKodu |"HRD.KPKL" | Stoğun genel kodudur. Genel kod özel kodların parentı olarak düşünülebilir. Aynı kategorideki ürünlerin aynı kisa koda sahip olması önemlidir. | Evet
 StokKisaAdi |"Hırdavat Kapı Kolu" | Stoğun genel adıdır. Genel ad özel adların parentı olarak düşünülebilir. Aynı kategorideki ürünlerin aynı kisa ada sahip olması önemlidir. | Evet
 Durum | true | Stok kartının aktif veya pasif olduğunu belirlemektedir | Evet
 TipID | 105001 | Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Gelir-gider hareketleri gibi işlemler de stok olarak düşünülmektedir dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. | Evet
 StokMuhasebeID | 201 | Stokların muhasebesebesi farklı şekilde işlenebilir. Stok muhasebe ID hakkında detaylı bilgi için muhasebe bölümünü inceleyiniz | Evet
-StokVergiID | 1 | **** | Evet
-Brm1ID | 1 | **** | Evet
-Brm2ID | 1 | **** | Opsiyonel
-Brm3ID | 1 | **** | Opsiyonel
-CevirimBrm2 | null | **** | Opsiyonel
-CevirimBrm3 | null | **** | Opsiyonel
+StokVergiID | 1 | Stoğun satış ve alış faturasında hangi vergilere tabii olduğunu belirtmektedir. 1 girilmesi durumunda standart olarak %18 KDV sınıfına ekler. | Evet
+Brm1ID | 1 | 1 adet, 2 metre, 3 m^2, 4 metre küp (Kullanıcı hangi birimleri eklediyse) | Evet
+Brm2ID | 1 | 1 adet, 2 metre, 3 m^2, 4 metre küp (Kullanıcı hangi birimleri eklediyse) | Opsiyonel
+Brm3ID | 1 | 1 adet, 2 metre, 3 m^2, 4 metre küp (Kullanıcı hangi birimleri eklediyse) | Opsiyonel
+CevirimBrm2 | null | Birim 1'in birim 2 cinsine çevrilmesi içindir. | Opsiyonel
+CevirimBrm3 | null | Birim 1'in birim 3 cinsine çevrilmesi içindir. | Opsiyonel
 Kalinlik | 10.0 | Stok kartının fizikel kalınlığıdır. | Opsiyonel
 En | 10.0 | Stok kartının fizikel enidir. | Opsiyonel
 Boy | 10.0 | Stok kartının fizikel boyudur. | Opsiyonel
 Yoğunluk | 3.0 | Stok kartının fizikel yoğunluğudur. | Opsiyonel
 Agirlik | 5.0 | Stok kartının fizikel ağırlığıdır. | Opsiyonel
-Kod1ID | null | *** | Opsiyonel
-Etiket1ID | null | *** | Opsiyonel
-SablonID | null | *** | Opsiyonel
+Kod1ID | null | Stok kartlarını hiyerarşik gruplandırmak için kullanılır. Örnek: Elektronik -> Bilgisayar -> HP| Opsiyonel
+Etiket1ID | null | Ürün etiketleri icindir. Örnek | Opsiyonel
+SablonID | null | Ürün ekleme şablonu varsa girilmelidir. | Opsiyonel
 
 
 
@@ -506,7 +514,7 @@ SablonID | null | *** | Opsiyonel
 Ürün oluştururken döküman altındaki örnek senaryo üzerinden gidebilirsiniz.
 </aside>
 
-## Stoktaki Ürünü Düzenle
+## Stoğu Düzenle
 
 ```shell
 
@@ -544,19 +552,26 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2',
-  'headers': {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"StokID":356,"SubeID":1,"SirketID":1,"StokKodu":"000000000000044","StokAdi":"kolonya","StokKisaKodu":"000000000000044","StokKisaAdi":"kolonya","Durum":true,"TipID":105001,"StokMuhasebeID":201,"StokVergiID":1,"Brm1ID":1,"Brm2ID":null,"Brm3ID":null,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":10,"En":10,"Boy":10,"Yogunluk":3,"Agirlik":5,"Kod1ID":null,"Etiket1ID":null,"SablonID":null})
+var axios = require('axios');
+var data = JSON.stringify({"StokID":356,"SubeID":1,"SirketID":1,"StokKodu":"000000000000045","StokAdi":"kolonyağı","StokKisaKodu":"000000000000045","StokKisaAdi":"kolonyağı","Durum":true,"TipID":105001,"StokMuhasebeID":201,"StokVergiID":1,"Brm1ID":1,"Brm2ID":null,"Brm3ID":null,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":16,"En":10,"Boy":10,"Yogunluk":3,"Agirlik":5,"Kod1ID":null,"Etiket1ID":null,"SablonID":null});
 
+var config = {
+  method: 'post',
+  url: 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+ 
+  },
+  data : data
 };
-request(options, function (error, response) { 
-  if (error) throw new Error(error);
-  console.log(response.body);
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
 });
 
 
@@ -568,6 +583,7 @@ var client = new RestClient("https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2")
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("Content-Type", "application/json");
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
 request.AddParameter(
   "application/json",
   "{\n    \t\"StokID\": 356,\n        \"SubeID\": 1,\n        \"SirketID\": 1,\n        \"StokKodu\": \"000000000000044\",\n        \"StokAdi\": \"kolonya\",\n        \"StokKisaKodu\": \"000000000000044\",\n        \"StokKisaAdi\": \"kolonya\",\n        \"Durum\": true,\n        \"TipID\": 105001,\n        \"StokMuhasebeID\": 201,\n        \"StokVergiID\": 1,\n        \"Brm1ID\": 1,\n        \"Brm2ID\": null,\n        \"Brm3ID\": null,\n        \"CevirimBrm2\": null,\n        \"CevirimBrm3\": null,\n        \"Kalinlik\": 10.0,\n        \"En\": 10.0,\n        \"Boy\": 10.0,\n        \"Yogunluk\": 3.0,\n        \"Agirlik\": 5.0,\n        \"Kod1ID\": null,\n        \"Etiket1ID\": null,\n        \"SablonID\": null\n        \n}",
@@ -585,7 +601,9 @@ url = "https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2"
 
 payload = "{\n    \t\"StokID\": 356,\n        \"SubeID\": 1,\n        \"SirketID\": 1,\n        \"StokKodu\": \"000000000000044\",\n        \"StokAdi\": \"kolonya\",\n        \"StokKisaKodu\": \"000000000000044\",\n        \"StokKisaAdi\": \"kolonya\",\n        \"Durum\": true,\n        \"TipID\": 105001,\n        \"StokMuhasebeID\": 201,\n        \"StokVergiID\": 1,\n        \"Brm1ID\": 1,\n        \"Brm2ID\": null,\n        \"Brm3ID\": null,\n        \"CevirimBrm2\": null,\n        \"CevirimBrm3\": null,\n        \"Kalinlik\": 10.0,\n        \"En\": 10.0,\n        \"Boy\": 10.0,\n        \"Yogunluk\": 3.0,\n        \"Agirlik\": 5.0,\n        \"Kod1ID\": null,\n        \"Etiket1ID\": null,\n        \"SablonID\": null\n        \n}"
 headers = {
-  'Content-Type': 'application/json'
+  'Content-Type': 'application/json',
+    'Authorization': 'Bearer YOURTOKEN'
+  
 }
 
 response = requests.request("POST", url, headers=headers, data = payload)
@@ -705,20 +723,27 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1',
-  'headers': {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({"StokID":356,"SubeID":1,"SirketID":1,"StokKodu":"000000000000044","StokAdi":"kolonya","StokKisaKodu":"000000000000044","StokKisaAdi":"kolonya","Durum":true,"TipID":105001,"StokMuhasebeID":201,"StokVergiID":1,"Brm1ID":1,"Brm2ID":null,"Brm3ID":null,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":10,"En":10,"Boy":10,"Yogunluk":3,"Agirlik":5,"Kod1ID":null,"Etiket1ID":null,"SablonID":null})
+var axios = require('axios');
+var data = JSON.stringify({"StokID":348,"StokKodu":"111111150","StokAdi":"Masif Ahşap Sehpa","StokKisaKodu":"111111150","StokKisaAdi":"Masif Ahşap Sehpa","Durum":true,"CevirimBrm2":null,"CevirimBrm3":null,"Kalinlik":0,"En":0,"Boy":0,"Yogunluk":0,"Agirlik":0,"OlsTar":"2020-07-03T14:53:53.837","DgsTar":"2020-07-03T14:53:53.837","OnayDurum":1,"TipID":105001,"TipAdi":"Stok","SubeID":1,"SubeKodu":"SRKT.SUBE","SubeAdi":"Şubem","SirketID":1,"SirketKodu":"SRKT","SirketAdi":"Şirketim","StokMuhasebeID":201,"StokMuhasebeKodu":"STOK","StokMuhasebeAdi":"Stok 153, 600, 150, 151, 152, 601, 610, 611","StokVergiID":42,"StokVergiKodu":"KDV57","StokVergiAdi":"Stok(KDV 57)","Brm1ID":1,"Brm1Kodu":"AD","Brm1Adi":"Adet","Brm2ID":null,"Brm2Kodu":null,"Brm2Adi":null,"Brm3ID":null,"Brm3Kodu":null,"Brm3Adi":null,"Kod1ID":null,"Kod1Kodu":null,"Kod1Adi":null,"OlsID":4,"OlsKodu":"MSK","OlsAdi":"Şamil","DgsID":4,"DgsKodu":"MSK","DgsAdi":"Şamil","Etiket1ID":null,"Etiket1Adi":null,"SablonID":null,"SablonKodu":null,"SablonAdi":null});
 
+var config = {
+  method: 'post',
+  url: 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
 };
-request(options, function (error, response) { 
-  if (error) throw new Error(error);
-  console.log(response.body);
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
 });
+
 
 
 ```
@@ -834,7 +859,7 @@ Stok silmek ile düzenlemek arasındaki fark KayitTipi=-1 olmasıdır. Stoğu si
 ## Stoktaki Ürünün Barkodunu Getir
 ```shell
 
-curl --location --request GET 'https://erp.aaro.com.tr/api/StokBarkod?SayfaSatirSayisi=10&StokID=201' \
+curl --location --request GET 'https://erp.aaro.com.tr/api/StokBarkod' \
 --header 'Authorization: Bearer YOURTOKEN' 
 
 
@@ -842,26 +867,30 @@ curl --location --request GET 'https://erp.aaro.com.tr/api/StokBarkod?SayfaSatir
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'GET',
-  'url': 'https://erp.aaro.com.tr/api/StokBarkod?SayfaSatirSayisi=10&StokID=201',
-  'headers': {
+var axios = require('axios');
+
+var config = {
+  method: 'get',
+  url: 'https://erp.aaro.com.tr/api/StokBarkod',
+  headers: { 
     'Authorization': 'Bearer YOURTOKEN'
   }
 };
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
-});
 
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
 
 
 ```
 
 ```csharp
 
-var client = new RestClient("https://erp.aaro.com.tr/api/StokBarkod?SayfaSatirSayisi=10&StokID=201");
+var client = new RestClient("https://erp.aaro.com.tr/api/StokBarkod");
 client.Timeout = -1;
 var request = new RestRequest(Method.GET);
 request.AddHeader("Authorization", "Bearer YOURTOKEN");
@@ -874,7 +903,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://erp.aaro.com.tr/api/StokBarkod?SayfaSatirSayisi=10&StokID=201"
+url = "https://erp.aaro.com.tr/api/StokBarkod"
 
 payload = {}
 headers = {
@@ -892,7 +921,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/StokBarkod?SayfaSatirSayisi=10&StokID=201")
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/StokBarkod")
   .header("Authorization", "Bearer YOURTOKEN")
   .asString();
 
@@ -950,7 +979,8 @@ Aaro bir ürün için sonsuz sayıda barkodu kabul etmektedir. Dolayısıyla bar
 
 Parametre | Değer | Tanım
 --------- | ----------- | ---------
-SayfaSatirSayisi | Integer | Getirilmesi istenen barkod sayısı
+SayfaSatirSayisi | Integer | Getirilen sayfadaki barkod sayısı
+Sayfa | Integer | Getirilmesi istenen sayfa numarası
 StokID| Integer | Stoktaki barkodu getirilmesi istenen ürün
 BarkodID| Integer | Getirilmesi istenenen barkod ID
 BarkodNo | String | Barkod Numarasına göre getirilecek barkod
@@ -982,20 +1012,25 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/StokBarkod/post?Kayi
 
 ```javascript
 
-var request = require('request');
-var options = {
-  'method': 'POST',
-  'url': 'https://erp.aaro.com.tr/api/StokBarkod/post?KayitTipi=1',
-  'headers': {
-    'Content-Type': 'application/json',
+var axios = require('axios');
+var data = JSON.stringify({"BarkodID":6,"StokID":201,"BarkodNo":"s0712345678911","BarkodTip":"Telefon Kategorisi"});
+
+var config = {
+  method: 'post',
+  url: 'https://erp.aaro.com.tr/api/StokBarkod/post?KayitTipi=1',
+  headers: { 
+    'Content-Type': 'application/json', 
     'Authorization': 'Bearer YOURTOKEN'
   },
-  body: JSON.stringify({"BarkodID":-1,"StokID":201,"BarkodNo":"s0712345678911","BarkodTip":"Bilgisayar Kategorisi"})
-
+  data : data
 };
-request(options, function (error, response) {
-  if (error) throw new Error(error);
-  console.log(response.body);
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
 });
 
 
