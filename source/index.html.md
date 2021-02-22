@@ -223,73 +223,120 @@ HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Stok")
 ```json
 {
     "SayfalandirmaBilgisi": {
+        "maxSayfaSatirSayisi": 100,
         "Sayfa": 1,
-        "SayfaSatirSayisi": 100,
-        "ToplamSatirSayisi": 1,
-        "ToplamSayfaSayisi": 1,
+        "SayfaSatirSayisi": 10,
+        "ToplamSatirSayisi": 3267,
+        "ToplamSayfaSayisi": 327,
         "OncekiSayfaVarMi": false,
-        "SonrakiSayfaVarMi": false,
-        "SayfaSatirSayisiAktifSayfada": 1
+        "SonrakiSayfaVarMi": true,
+        "SayfaSatirSayisiAktifSayfada": 10
     },
     "Model": [
         {
-            "StokID": 307,
-            "StokKodu": "000000000000047",
-            "StokAdi": "Çam Kesme Tahtası Budaksız",
-            "StokKisaKodu": "000000000000047",
-            "StokKisaAdi": "Çam Kesme Tahtası A/B",
-            "Durum": true,
-            "CevirimBrm2": 0.000000,
-            "CevirimBrm3": 0.000000,
-            "Kalinlik": 1.800000,
-            "En": 40.000000,
-            "Boy": 50.000000,
-            "Yogunluk": 0.650000,
-            "Agirlik": 2.500000,
-            "OlsTar": "2020-07-03T07:53:43.66",
-            "DgsTar": "2020-09-01T12:18:35.723",
-            "OnayDurum": 1,
-            "TipID": 105001,
-            "TipAdi": "Stok",
-            "SubeID": 1,
-            "SubeKodu": "SRKT.SUBE",
-            "SubeAdi": "Merkez",
-            "SirketID": 1,
-            "SirketKodu": "Aaro",
-            "SirketAdi": "Aaro ",
-            "StokMuhasebeID": 201,
-            "StokMuhasebeKodu": "STOK",
-            "StokMuhasebeAdi": "Stok 153, 600, 150, 151, 152, 601, 610, 611",
-            "StokVergiID": 1,
-            "StokVergiKodu": "KDV18",
             "StokVergiAdi": "KDV % 18",
-            "Brm1ID": 1,
-            "Brm1Kodu": "AD",
-            "Brm1Adi": "Adet",
-            "Brm2ID": null,
+            "StokVergiAlisKDVOrani": 18,
+            "StokVergiSatisKDVOrani": 18,
+            "StokVergiKodu": "KDV18",
+            "Brm1Kodu": "MT",
             "Brm2Kodu": null,
-            "Brm2Adi": null,
-            "Brm3ID": null,
             "Brm3Kodu": null,
-            "Brm3Adi": null,
-            "Kod1ID": 5,
-            "Kod1Kodu": "HB",
-            "Kod1Adi": "Hobi",
-            "OlsID": 4,
-            "OlsKodu": "MSK",
-            "OlsAdi": "Şamil",
-            "DgsID": 4,
-            "DgsKodu": "MSK",
-            "DgsAdi": "Şamil",
-            "Etiket1ID": null,
+            "RaporBrmKodu": null,
+            "UretimBrmKodu": null,
+            "Miktar": -85.000000,
+            "KartPuan": null,
+            "SubeKodu": "SRKT.SUBE",
+            "SubeAdi": "Şubem",
+            "SirketKodu": "SRKT1",
+            "SirketAdi": "Şirket 1",
+            "EntegrasyonTanimKodu": "HM9029",
+            "EntegrasyonTanimAdi": "(ST37-2)28 lik TRANSMİSYON MİLİ",
+            "TipAdi": "Stok",
+            "TipKodu": null,
+            "OnayDurum": 1,
+            "OlsTar": "2020-10-02T15:43:40.91",
+            "DgsTar": "2021-02-10T09:41:58.967",
+            "OlsID": 2,
+            "OlsKodu": "yonetici",
+            "OlsAdi": "yonetici",
+            "DgsID": 2,
+            "DgsKodu": "yonetici",
+            "DgsAdi": "yonetici",
+            "Kod1Kodu": null,
+            "Kod2Kodu": null,
+            "Kod3Kodu": null,
+            "Kod4Kodu": null,
+            "Kod5Kodu": null,
+            "Kod6Kodu": null,
+            "Kod1Adi": null,
+            "Kod2Adi": null,
+            "Kod3Adi": null,
+            "Kod4Adi": null,
+            "Kod5Adi": null,
+            "Kod6Adi": null,
             "Etiket1Adi": null,
-            "SablonID": null,
+            "Etiket2Adi": null,
+            "Etiket3Adi": null,
+            "Etiket4Adi": null,
+            "Etiket5Adi": null,
             "SablonKodu": null,
             "SablonAdi": null,
-            "Miktar": -100.000000,
-            "ResimAdresi": "https://erp.aaro.com.tr/Data/ResimAnahtarli/T3001S307B3.jpg?wpTDlMKMGQkLwovDhMK8wq%2fDosOkw5pFw5fDhMKawqbDtcKWw5PChMKLwq89ShLCm8K2wo%2fCpcOQwqvCnQnDkMODwonCpcOBwo7DjsKAwpXCiwIcRMKXw4DCicKow4HCtsOUCMOdw4vCjsKpw5bDkQfCocOYw4BSOiXDl8Od",
-            "EsnekAramaKisiti": "000000000000047 Çam Kesme Tahtası Budaksız 957195719571"
-        }
+            "ResimAdresi": null,
+            "EsnekAramaKisiti": "HM9029 (ST37-2)28 lik TRANSMİSYON MİLİ            ",
+            "StokID": 1086,
+            "StokKodu": "HM9029",
+            "StokAdi": "(ST37-2)28 lik TRANSMİSYON MİLİ",
+            "StokKisaKodu": "HM9029",
+            "StokKisaAdi": "(ST37-2)28 lik TRANSMİSYON MİLİ",
+            "StokMuhasebeID": 209,
+            "StokVergiID": 1,
+            "Brm1ID": 2,
+            "Brm2ID": null,
+            "Brm3ID": null,
+            "UretimBrmID": null,
+            "RaporBrmID": null,
+            "CevirimBrm2": 0.000000,
+            "CevirimBrm3": 0.000000,
+            "Kalinlik": 0.000000,
+            "En": 0.000000,
+            "Boy": 0.000000,
+            "Yogunluk": 0.000000,
+            "Agirlik": 0.000000,
+            "GTIP": null,
+            "ZorunluDemirbas": false,
+            "ZorunluStok": false,
+            "ZorunluDekont": false,
+            "ZorunluCari": false,
+            "Seviye": 0,
+            "FiyatEtiketi": null,
+            "BayiGozuksunMu": false,
+            "BayiMaksMiktar": 0,
+            "YedekD1": null,
+            "YedekD2": null,
+            "SubeID": 1,
+            "SirketID": 1,
+            "Durum": true,
+            "TipID": 105001,
+            "EntegrasyonTanimID": 2957,
+            "Kod1ID": null,
+            "Kod2ID": null,
+            "Kod3ID": null,
+            "Kod4ID": null,
+            "Kod5ID": null,
+            "Kod6ID": null,
+            "Etiket1ID": null,
+            "Etiket2ID": null,
+            "Etiket3ID": null,
+            "Etiket4ID": null,
+            "Etiket5ID": null,
+            "SablonID": null
+        },
+        {
+          ...
+          },
+        {
+          ...
+          },
     ],
     "Mesajlar": {},
     "Sonuc": true,
@@ -308,6 +355,7 @@ Bu uç nokta ile stoklardaki ürünleri toplu olarak ya da belirli bir kısıt i
 
 Parameter | Değer | Tanım
 --------- | ----------- | ---------
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Stok kodunda, stok adında, etiket adlarında, kod adlarında girilen string'e göre arama yapar.
 SiralamaKisiti | String | Gelen veriyi sıralamak için kullanılır. Durum, StokID gibi kolon adları verilmelidir.
 Sayfa | Integer | Kaç sayfa ürün getirmek istediğiniz
 SayfaSatirSayisi |Integer | Getirilen sayfadaki ürün limiti.
@@ -327,7 +375,7 @@ OlsID | Integer | Stoğu Oluşturan kişi ID'sine göre ürünleri getirmektedir
 
 ```shell
 
-curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1' \
+curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     	"StokID": -1,
@@ -366,7 +414,7 @@ var data = JSON.stringify({"StokID":-1,"SubeID":1,"SirketID":1,"StokKodu":"00000
 
 var config = {
   method: 'post',
-  url: 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1',
+  url: 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=2',
   headers: { 
     'Content-Type': 'application/json', 
     'Authorization': 'Bearer YOURTOKEN'
@@ -388,7 +436,7 @@ axios(config)
 
 ```csharp
 
-var client = new RestClient("https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1");
+var client = new RestClient("https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("Content-Type", "application/json");
@@ -405,7 +453,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1"
+url = "https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1"
 
 payload = "{\n    \t\"StokID\": -1,\n        \"SubeID\": 1,\n        \"SirketID\": 1,\n        \"StokKodu\": \"000000000000044\",\n        \"StokAdi\": \"kolonya\",\n        \"StokKisaKodu\": \"000000000000044\",\n        \"StokKisaAdi\": \"kolonya\",\n        \"Durum\": true,\n        \"TipID\": 105001,\n        \"StokMuhasebeID\": 201,\n        \"StokVergiID\": 1,\n        \"Brm1ID\": 1,\n        \"Brm2ID\": null,\n        \"Brm3ID\": null,\n        \"CevirimBrm2\": null,\n        \"CevirimBrm3\": null,\n        \"Kalinlik\": 10.0,\n        \"En\": 10.0,\n        \"Boy\": 10.0,\n        \"Yogunluk\": 3.0,\n        \"Agirlik\": 5.0,\n        \"Kod1ID\": null,\n        \"Etiket1ID\": null,\n        \"SablonID\": null\n        \n}"
 headers = {
@@ -422,7 +470,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1")
+HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1")
   .header("Content-Type", "application/json")
   .body("{\n    \t\"StokID\": -1,\n        \"SubeID\": 1,\n        \"SirketID\": 1,\n        \"StokKodu\": \"000000000000044\",\n        \"StokAdi\": \"kolonya\",\n        \"StokKisaKodu\": \"000000000000044\",\n        \"StokKisaAdi\": \"kolonya\",\n        \"Durum\": true,\n        \"TipID\": 105001,\n        \"StokMuhasebeID\": 201,\n        \"StokVergiID\": 1,\n        \"Brm1ID\": 1,\n        \"Brm2ID\": null,\n        \"Brm3ID\": null,\n        \"CevirimBrm2\": null,\n        \"CevirimBrm3\": null,\n        \"Kalinlik\": 10.0,\n        \"En\": 10.0,\n        \"Boy\": 10.0,\n        \"Yogunluk\": 3.0,\n        \"Agirlik\": 5.0,\n        \"Kod1ID\": null,\n        \"Etiket1ID\": null,\n        \"SablonID\": null\n        \n}")
   .asString();
@@ -435,29 +483,101 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/p
 ```json
 {
     "Model": {
-        "StokID": 301,
-        "SubeID": 1,
-        "SirketID": 1,
-        "StokKodu": "000000000000044",
+        "StokVergiAdi": "KDV % 18",
+        "StokVergiAlisKDVOrani": 18,
+        "StokVergiSatisKDVOrani": 18,
+        "StokVergiKodu": "KDV18",
+        "Brm1Kodu": "AD",
+        "Brm2Kodu": null,
+        "Brm3Kodu": null,
+        "RaporBrmKodu": null,
+        "UretimBrmKodu": null,
+        "Miktar": null,
+        "KartPuan": null,
+        "SubeKodu": "SRKT.SUBE",
+        "SubeAdi": "Şubem",
+        "SirketKodu": "SRKT1",
+        "SirketAdi": "Şirket 1",
+        "EntegrasyonTanimKodu": null,
+        "EntegrasyonTanimAdi": null,
+        "TipAdi": "Stok",
+        "TipKodu": null,
+        "OnayDurum": 1,
+        "OlsTar": "2021-02-22T08:38:01.733",
+        "DgsTar": "2021-02-22T08:38:01.733",
+        "OlsID": 2,
+        "OlsKodu": "yonetici",
+        "OlsAdi": "yonetici",
+        "DgsID": 2,
+        "DgsKodu": "yonetici",
+        "DgsAdi": "yonetici",
+        "Kod1Kodu": null,
+        "Kod2Kodu": null,
+        "Kod3Kodu": null,
+        "Kod4Kodu": null,
+        "Kod5Kodu": null,
+        "Kod6Kodu": null,
+        "Kod1Adi": null,
+        "Kod2Adi": null,
+        "Kod3Adi": null,
+        "Kod4Adi": null,
+        "Kod5Adi": null,
+        "Kod6Adi": null,
+        "Etiket1Adi": null,
+        "Etiket2Adi": null,
+        "Etiket3Adi": null,
+        "Etiket4Adi": null,
+        "Etiket5Adi": null,
+        "SablonKodu": null,
+        "SablonAdi": null,
+        "ResimAdresi": null,
+        "EsnekAramaKisiti": "000000000000089 kolonya",
+        "StokID": 3707,
+        "StokKodu": "000000000000089",
         "StokAdi": "kolonya",
-        "StokKisaKodu": "000000000000044",
+        "StokKisaKodu": "000000000000089",
         "StokKisaAdi": "kolonya",
-        "Durum": true,
-        "TipID": 105001,
         "StokMuhasebeID": 201,
         "StokVergiID": 1,
         "Brm1ID": 1,
         "Brm2ID": null,
         "Brm3ID": null,
+        "UretimBrmID": null,
+        "RaporBrmID": null,
         "CevirimBrm2": null,
         "CevirimBrm3": null,
-        "Kalinlik": 10.0,
-        "En": 10.0,
-        "Boy": 10.0,
-        "Yogunluk": 3.0,
-        "Agirlik": 5.0,
+        "Kalinlik": 10.000000,
+        "En": 10.000000,
+        "Boy": 10.000000,
+        "Yogunluk": 3.000000,
+        "Agirlik": 5.000000,
+        "GTIP": null,
+        "ZorunluDemirbas": false,
+        "ZorunluStok": false,
+        "ZorunluDekont": false,
+        "ZorunluCari": false,
+        "Seviye": 0,
+        "FiyatEtiketi": null,
+        "BayiGozuksunMu": false,
+        "BayiMaksMiktar": 0,
+        "YedekD1": null,
+        "YedekD2": null,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Durum": true,
+        "TipID": 105001,
+        "EntegrasyonTanimID": null,
         "Kod1ID": null,
+        "Kod2ID": null,
+        "Kod3ID": null,
+        "Kod4ID": null,
+        "Kod5ID": null,
+        "Kod6ID": null,
         "Etiket1ID": null,
+        "Etiket2ID": null,
+        "Etiket3ID": null,
+        "Etiket4ID": null,
+        "Etiket5ID": null,
         "SablonID": null
     },
     "Mesajlar": {},
@@ -470,7 +590,7 @@ Yeni bir stok kartı eklemek için
 
 ### HTTP Request
 
-`GET https://erp.aaro.com.tr/api/Stok/post?KayitTipi=1`
+`GET https://erp.aaro.com.tr/api/Stok/post?KayitTipi=-1`
 
 ### Sorgu URL Parametreleri
 
@@ -628,31 +748,102 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/p
 
 ```json
 {
-    
     "Model": {
-        "StokID": 356,
-        "SubeID": 1,
-        "SirketID": 1,
-        "StokKodu": "000000000000045",
-        "StokAdi": "kolonyağı",
-        "StokKisaKodu": "000000000000045",
-        "StokKisaAdi": "kolonyağı",
-        "Durum": true,
-        "TipID": 105001,
+        "StokVergiAdi": "KDV % 18",
+        "StokVergiAlisKDVOrani": 18,
+        "StokVergiSatisKDVOrani": 18,
+        "StokVergiKodu": "KDV18",
+        "Brm1Kodu": "AD",
+        "Brm2Kodu": null,
+        "Brm3Kodu": null,
+        "RaporBrmKodu": null,
+        "UretimBrmKodu": null,
+        "Miktar": null,
+        "KartPuan": null,
+        "SubeKodu": "SRKT.SUBE",
+        "SubeAdi": "Şubem",
+        "SirketKodu": "SRKT1",
+        "SirketAdi": "Şirket 1",
+        "EntegrasyonTanimKodu": null,
+        "EntegrasyonTanimAdi": null,
+        "TipAdi": "Stok",
+        "TipKodu": null,
+        "OnayDurum": 1,
+        "OlsTar": "2021-02-15T12:03:47.18",
+        "DgsTar": "2021-02-22T09:08:15.23",
+        "OlsID": 2,
+        "OlsKodu": "yonetici",
+        "OlsAdi": "yonetici",
+        "DgsID": 2,
+        "DgsKodu": "yonetici",
+        "DgsAdi": "yonetici",
+        "Kod1Kodu": null,
+        "Kod2Kodu": null,
+        "Kod3Kodu": null,
+        "Kod4Kodu": null,
+        "Kod5Kodu": null,
+        "Kod6Kodu": null,
+        "Kod1Adi": null,
+        "Kod2Adi": null,
+        "Kod3Adi": null,
+        "Kod4Adi": null,
+        "Kod5Adi": null,
+        "Kod6Adi": null,
+        "Etiket1Adi": null,
+        "Etiket2Adi": null,
+        "Etiket3Adi": null,
+        "Etiket4Adi": null,
+        "Etiket5Adi": null,
+        "SablonKodu": null,
+        "SablonAdi": null,
+        "ResimAdresi": null,
+        "EsnekAramaKisiti": "000000000000087 kolonya apiden degistirildi            ",
+        "StokID": 3705,
+        "StokKodu": "000000000000087",
+        "StokAdi": "kolonya apiden degistirildi",
+        "StokKisaKodu": "000000000000087",
+        "StokKisaAdi": "kolonya",
         "StokMuhasebeID": 201,
         "StokVergiID": 1,
         "Brm1ID": 1,
         "Brm2ID": null,
         "Brm3ID": null,
+        "UretimBrmID": null,
+        "RaporBrmID": null,
         "CevirimBrm2": null,
         "CevirimBrm3": null,
-        "Kalinlik": 16.0,
-        "En": 10.0,
-        "Boy": 10.0,
-        "Yogunluk": 3.0,
-        "Agirlik": 5.0,
+        "Kalinlik": 10.000000,
+        "En": 10.000000,
+        "Boy": 10.000000,
+        "Yogunluk": 3.000000,
+        "Agirlik": 5.000000,
+        "GTIP": null,
+        "ZorunluDemirbas": false,
+        "ZorunluStok": false,
+        "ZorunluDekont": false,
+        "ZorunluCari": false,
+        "Seviye": 0,
+        "FiyatEtiketi": null,
+        "BayiGozuksunMu": false,
+        "BayiMaksMiktar": 0,
+        "YedekD1": null,
+        "YedekD2": null,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Durum": true,
+        "TipID": 105001,
+        "EntegrasyonTanimID": null,
         "Kod1ID": null,
+        "Kod2ID": null,
+        "Kod3ID": null,
+        "Kod4ID": null,
+        "Kod5ID": null,
+        "Kod6ID": null,
         "Etiket1ID": null,
+        "Etiket2ID": null,
+        "Etiket3ID": null,
+        "Etiket4ID": null,
+        "Etiket5ID": null,
         "SablonID": null
     },
     "Mesajlar": {},
@@ -795,22 +986,30 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/p
 > Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
 
 ```json
+Başarılı sonuç:
+
+{
+    "Model": null,
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+
+Hatalı sonuç:
 {
     "Model": {
-        "StokID": 0,
-        "SubeID": 0,
-        "SirketID": 0,
-        "StokKodu": null,
+        "StokID": 1255,
+        "StokKodu": "SAC 01",
         "StokAdi": null,
         "StokKisaKodu": null,
         "StokKisaAdi": null,
-        "Durum": false,
-        "TipID": 0,
-        "StokMuhasebeID": 0,
-        "StokVergiID": 0,
+        "StokMuhasebeID": null,
+        "StokVergiID": null,
         "Brm1ID": null,
         "Brm2ID": null,
         "Brm3ID": null,
+        "UretimBrmID": null,
+        "RaporBrmID": null,
         "CevirimBrm2": null,
         "CevirimBrm3": null,
         "Kalinlik": 0.0,
@@ -818,14 +1017,42 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Stok/p
         "Boy": 0.0,
         "Yogunluk": 0.0,
         "Agirlik": 0.0,
+        "GTIP": null,
+        "ZorunluDemirbas": false,
+        "ZorunluStok": false,
+        "ZorunluDekont": false,
+        "ZorunluCari": false,
+        "Seviye": 0,
+        "FiyatEtiketi": null,
+        "BayiGozuksunMu": false,
+        "BayiMaksMiktar": 0,
+        "YedekD1": null,
+        "YedekD2": null,
+        "SubeID": 0,
+        "SirketID": 0,
+        "Durum": false,
+        "TipID": 0,
+        "EntegrasyonTanimID": null,
         "Kod1ID": null,
+        "Kod2ID": null,
+        "Kod3ID": null,
+        "Kod4ID": null,
+        "Kod5ID": null,
+        "Kod6ID": null,
         "Etiket1ID": null,
+        "Etiket2ID": null,
+        "Etiket3ID": null,
+        "Etiket4ID": null,
+        "Etiket5ID": null,
         "SablonID": null
     },
-    "Mesajlar": {},
-    "Sonuc": true,
-    "MesajlarTumu": ""
+    "Mesajlar": {
+        "Mesaj": "Hareket kayıtları mevcut. Bu kaydı silemezsiniz."
+    },
+    "Sonuc": false,
+    "MesajlarTumu": "Hareket kayıtları mevcut. Bu kaydı silemezsiniz."
 }
+
 ```
 
 Stoktaki bir ürünü silmek içindir.
@@ -973,7 +1200,7 @@ Aaro bir ürün için sonsuz sayıda barkodu kabul etmektedir. Dolayısıyla bar
 
 ### HTTP Request
 
-`POST https://erp.aaro.com.tr/api/StokBarkod/post?KayitTipi=1`
+`POST https://erp.aaro.com.tr/api/StokBarkod/post?KayitTipi=-1`
 
 ### Sorgu URL Parametreleri
 
@@ -1474,59 +1701,73 @@ HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Depo?Sa
         "SayfaSatirSayisiAktifSayfada": 3
     },
     "Model": [
-        {
+               {
+            "SubeKodu": "TUM",
+            "SubeAdi": "Tüm Şubeler",
+            "SirketKodu": "SRKT0",
+            "SirketAdi": "Şirket 0",
+            "TipAdi": "Depo",
+            "TipKodu": null,
+            "OnayDurum": 1,
+            "OlsTar": "2020-09-30T10:33:58.5",
+            "DgsTar": "2020-09-30T10:33:58.5",
+            "OlsID": 0,
+            "OlsKodu": "TUM",
+            "OlsAdi": "",
+            "DgsID": 0,
+            "DgsKodu": "TUM",
+            "DgsAdi": "",
+            "Kod1Kodu": null,
+            "Kod2Kodu": null,
+            "Kod3Kodu": null,
+            "Kod4Kodu": null,
+            "Kod5Kodu": null,
+            "Kod6Kodu": null,
+            "Kod1Adi": null,
+            "Kod2Adi": null,
+            "Kod3Adi": null,
+            "Kod4Adi": null,
+            "Kod5Adi": null,
+            "Kod6Adi": null,
+            "Etiket1Adi": null,
+            "Etiket2Adi": null,
+            "Etiket3Adi": null,
+            "Etiket4Adi": null,
+            "Etiket5Adi": null,
+            "SablonKodu": null,
+            "SablonAdi": null,
+            "ResimAdresi": null,
+            "EsnekAramaKisiti": "DPM Depom           ",
             "DepoID": 2,
-            "SubeID": 0,
-            "SirketID": 0,
             "DepoKodu": "DPM",
             "DepoAdi": "Depom",
             "CariID": null,
+            "CariKodu": null,
+            "MaxHacim": null,
+            "MaxAgirlik": 0.000000,
+            "SubeID": 0,
+            "SirketID": 0,
             "Durum": true,
             "TipID": 107001,
+            "EntegrasyonTanimID": null,
             "Kod1ID": null,
-            "OnayDurum": 1,
-            "OlsID": 0,
-            "OlsTar": "0001-01-01T00:00:00",
-            "DgsID": 0,
-            "DgsTar": "0001-01-01T00:00:00",
+            "Kod2ID": null,
+            "Kod3ID": null,
+            "Kod4ID": null,
+            "Kod5ID": null,
+            "Kod6ID": null,
             "Etiket1ID": null,
+            "Etiket2ID": null,
+            "Etiket3ID": null,
+            "Etiket4ID": null,
+            "Etiket5ID": null,
             "SablonID": null
         },
         {
-            "DepoID": 1,
-            "SubeID": 0,
-            "SirketID": 0,
-            "DepoKodu": "GG",
-            "DepoAdi": "GelirGider Depo",
-            "CariID": null,
-            "Durum": true,
-            "TipID": 107001,
-            "Kod1ID": null,
-            "OnayDurum": 1,
-            "OlsID": 0,
-            "OlsTar": "0001-01-01T00:00:00",
-            "DgsID": 0,
-            "DgsTar": "0001-01-01T00:00:00",
-            "Etiket1ID": null,
-            "SablonID": null
+          ...
         },
         {
-            "DepoID": 3,
-            "SubeID": 0,
-            "SirketID": 0,
-            "DepoKodu": "000000000000001",
-            "DepoAdi": "Siteler Depo",
-            "CariID": null,
-            "Durum": true,
-            "TipID": 107001,
-            "Kod1ID": null,
-            "OnayDurum": 1,
-            "OlsID": 0,
-            "OlsTar": "0001-01-01T00:00:00",
-            "DgsID": 0,
-            "DgsTar": "0001-01-01T00:00:00",
-            "Etiket1ID": null,
-            "SablonID": null
+          ...
         }
     ],
     "Mesajlar": {},
@@ -1546,6 +1787,7 @@ Mevcut bütün depoları getirmektedir.
 
 Parametre | Değer | Tanım
 --------- | ----------- | ---------
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Depo kodunda, depo adında, etiket adlarında, kod adlarında girilen string'e göre arama yapar.
 SayfaSatirSayisi | Integer | Limitli sayıda depo getirmek için kullanılmaktadır.
 DepoID | Integer | Sadece belirli bir depoyu getirmek için eklenmektedir.
 
@@ -3634,6 +3876,7 @@ Bütün fiyat listelerini ya da istenilen kısıttaki fiyat listelerini getirmek
 
 Parametre | Değer | Tanım
 --------- | ----------- | ---------
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Fiyat listerinin kodunda, Fiyat listerinin adında, etiket adlarında, kod adlarında girilen string'e göre arama yapar.
 SayfaSatirSayisi | Integer | Limitli sayıda fiyat listesi getirmek için kullanılmaktadır.
 FiyatListesiID | Integer | Sadece belirli bir fiyat listesini getirmek için eklenmektedir.
 TipID | Integer | Fiyat listelerinin tipine göre çağırım için mevcuttur. (alım fiyat listesi, satış fiyat listesi gibi)
@@ -4269,7 +4512,7 @@ Bütün cari listelerini ya da istenilen kısıttaki cariyi getirmektedir.
 
 Parametre | Değer | Tanım
 --------- | ----------- | ---------
-SayfaSatirSayisi | Integer | Limitli sayıda cari getirmek için kullanılmaktadır.
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Cari kodunda, cari adında, etiket adlarında, kod adlarında girilen string'e göre arama yapar.SayfaSatirSayisi | Integer | Limitli sayıda cari getirmek için kullanılmaktadır.
 CariID | Integer | Sadece belirli bir cariyi getirmek için eklenmektedir.
 CariKodu | String | Cari koduna göre cari veya carileri döndürmektedir.
 CariAdi | String | Carinin kayıtlı adına göre getirmektedir.
@@ -4712,5 +4955,1357 @@ CariID | Integer | Silmek istediğiniz cari ID'si
 <aside class="warning">
 Bu işlemin geri dönüşü yoktur. Silmeden önce bu carinin hareketler ve bankalarla ile ilişkisini kesmelisiniz.
 </aside>
+
+
+
+# Kasa
+
+## Kasaları Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/Kasa' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+
+var axios = require('axios');
+
+var config = {
+  method: 'get',
+  url: 'https://erp.aaro.com.tr/api/Kasa',
+  headers: {
+    'Authorization': 'Bearer YOURTOKEN'
+  }
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/Kasa");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/Kasa"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Kasa")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "SayfalandirmaBilgisi": {
+        "maxSayfaSatirSayisi": 100,
+        "Sayfa": 1,
+        "SayfaSatirSayisi": 10,
+        "ToplamSatirSayisi": 4,
+        "ToplamSayfaSayisi": 1,
+        "OncekiSayfaVarMi": false,
+        "SonrakiSayfaVarMi": false,
+        "SayfaSatirSayisiAktifSayfada": 4
+    },
+    "Model": [
+        {
+            "Bakiye": 0.000000,
+            "BakiyeDvz": null,
+            "DevirTutar": null,
+            "DevirTutarDvz": null,
+            "DovizKodu": "EUR",
+            "SubeKodu": "TUM",
+            "SubeAdi": "Tüm Şubeler",
+            "SirketKodu": "SRKT0",
+            "SirketAdi": "Şirket 0",
+            "EntegrasyonTanimKodu": "100.10.002",
+            "EntegrasyonTanimAdi": "EURO KASASI",
+            "TipAdi": "Kasa",
+            "TipKodu": null,
+            "OnayDurum": 1,
+            "OlsTar": "2020-09-30T10:34:13.08",
+            "DgsTar": "2020-10-02T16:46:14.613",
+            "OlsID": 0,
+            "OlsKodu": "TUM",
+            "OlsAdi": "",
+            "DgsID": 2,
+            "DgsKodu": "yonetici",
+            "DgsAdi": "yonetici",
+            "Kod1Kodu": null,
+            "Kod2Kodu": null,
+            "Kod3Kodu": null,
+            "Kod4Kodu": null,
+            "Kod5Kodu": null,
+            "Kod6Kodu": null,
+            "Kod1Adi": null,
+            "Kod2Adi": null,
+            "Kod3Adi": null,
+            "Kod4Adi": null,
+            "Kod5Adi": null,
+            "Kod6Adi": null,
+            "Etiket1Adi": null,
+            "Etiket2Adi": null,
+            "Etiket3Adi": null,
+            "Etiket4Adi": null,
+            "Etiket5Adi": null,
+            "SablonKodu": null,
+            "SablonAdi": null,
+            "ResimAdresi": null,
+            "EsnekAramaKisiti": "100.10.002 EURO KASASI           ",
+            "KasaID": 2,
+            "KasaKodu": "100.10.002",
+            "KasaAdi": "EURO KASASI",
+            "DovizID": 3,
+            "Seviye": 0,
+            "SubeID": 0,
+            "SirketID": 0,
+            "Durum": true,
+            "TipID": 103001,
+            "EntegrasyonTanimID": 2925,
+            "Kod1ID": null,
+            "Kod2ID": null,
+            "Kod3ID": null,
+            "Kod4ID": null,
+            "Kod5ID": null,
+            "Kod6ID": null,
+            "Etiket1ID": null,
+            "Etiket2ID": null,
+            "Etiket3ID": null,
+            "Etiket4ID": null,
+            "Etiket5ID": null,
+            "SablonID": null
+        },
+        {
+          ...
+        },
+         {
+          ...
+        },
+    ],
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Bu uç nokta ile kasalarınızı toplu olarak ya da belirli bir kısıt ile getirebilirsiniz.
+
+
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/Kasa?`
+
+### URL Parametreleri
+
+Parameter | Değer | Tanım
+--------- | ----------- | ---------
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Kasa kodunda, kasa adında, etiket adlarında, kod adlarında girilen string'e göre arama yapar.
+SiralamaKisiti | String | Gelen veriyi sıralamak için kullanılır. Durum, KasaID gibi kolon adları verilmelidir.
+Sayfa | Integer | Kaç sayfa kasa getirmek istediğinizi belirtir.
+SayfaSatirSayisi |Integer | Getirilen sayfadaki kasa limitini belirtir.
+KasaID | Integer | Belirtilen ID ile kasa getirmektedir.
+Durum | Boolean | True ise aktif, false ise pasif ürünleri getirmektedir.
+TipID |Integer | Kasanın tipine göre çağırım için mevcuttur. (Tip ID listesinden bakınız)
+SubeID | Integer | Şube ID'sine göre ürünleri getirmektedir.
+SirketID | Integer | Şirket ID'sine göre ürünleri getirmektedir.
+StokMuhasebeID | Integer | Stok Muhasebe ID'sine göre ürünleri getirmektedir.
+StokVergiID | Integer | Stok Vergi ID'sine göre ürünleri getirmektedir.
+OlsID | Integer | Stoğu Oluşturan kişi ID'sine göre ürünleri getirmektedir.
+
+
+
+
+## Kasa Ekle
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"KasaID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "KasaKisaKodu": "00000000000002",
+        "KasaKisaAdi": "TL Kasa",
+        "Durum": true,
+        "TipID": 103001,
+        "KasaMuhasebeID": 201,
+        "DovizID": 1,
+        "Seviye": 1,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = JSON.stringify({"KasaID":-1,"SubeID":1,"SirketID":1,"KasaKodu":"00000000000002","KasaAdi":"TL Kasa","KasaKisaKodu":"00000000000002","KasaKisaAdi":"TL Kasa","Durum":true,"TipID":103001,"KasaMuhasebeID":201,"DovizID":1,"Seviye":1,"EntegrasyonTanimID":null,"Kod1ID":null,"Etiket1ID":null,"SablonID":null});
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/Kasa/post?KayitTipi=1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kasa/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+
+payload="{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+        "Bakiye": null,
+        "BakiyeDvz": null,
+        "DevirTutar": null,
+        "DevirTutarDvz": null,
+        "DovizKodu": "TRY",
+        "SubeKodu": "SRKT.SUBE",
+        "SubeAdi": "Şubem",
+        "SirketKodu": "SRKT1",
+        "SirketAdi": "Şirket 1",
+        "EntegrasyonTanimKodu": null,
+        "EntegrasyonTanimAdi": null,
+        "TipAdi": "Kasa",
+        "TipKodu": null,
+        "OnayDurum": 1,
+        "OlsTar": "2021-02-19T12:37:38.53",
+        "DgsTar": "2021-02-19T12:37:38.53",
+        "OlsID": 2,
+        "OlsKodu": "yonetici",
+        "OlsAdi": "yonetici",
+        "DgsID": 2,
+        "DgsKodu": "yonetici",
+        "DgsAdi": "yonetici",
+        "Kod1Kodu": null,
+        "Kod1Adi": null,
+        "Etiket1Adi": null,
+        "SablonKodu": null,
+        "SablonAdi": null,
+        "ResimAdresi": null,
+        "EsnekAramaKisiti": "00000000000002 TL Kasa           ",
+        "KasaID": 6,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "DovizID": 1,
+        "Seviye": 0,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Durum": true,
+        "TipID": 103001,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+    },
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Yeni bir kasa kartı eklemek için
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=1`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir.
+
+### Sorgu Body JSON açıklaması
+
+Parametre | Örnek Değer | Tanım | ZorunluMu
+--------- | ------- | ----------- | -----------
+KasaID | -1 | Eklenilen ürünün Kasa ID'sidir. -1 girildiği takdirde rastgele olarak ID atanmaktadır.  | Evet
+SubeID | 1 | Kasanın bulunduğu şubenin ID'sidir. | Evet
+SirketID | 1 | Kasanın ait olduğu şirketin ID'sidir. | Evet
+KasaKodu | "000000000000001" | Kasanın detaylı kodudur. | Evet
+KasaAdi | "MERKEZ KASA" | Kasanın gözüken adıdır. | Evet
+KasaKisaKodu |"MerKas" | Kasanın genel kodudur. Genel kod özel kodların parentı olarak düşünülebilir. Aynı kategorideki kasaların aynı kisa koda sahip olması önemlidir. | Evet
+KasaKisaAdi |"Merkez Kasa" | Kasanın genel adıdır. Genel ad özel adların parentı olarak düşünülebilir. Aynı kategorideki kasaların aynı kisa ada sahip olması önemlidir. | Evet
+Durum | true | Kasa kartının aktif veya pasif olduğunu belirlemektedir | Evet
+TipID | 105001 | Aaro'da Kasa'yı işaret eder | Evet
+KasaMuhasebeID | 201 | Kasaların muhasebesebesi farklı şekilde işlenebilir. Kasa muhasebe ID hakkında detaylı bilgi için muhasebe bölümünü inceleyiniz | Evet
+DovizID | 1 | Kasanın döviz tipini belirtmeliniz. Örn TL olması için 1 olmalıdır.  | Evet
+Kod1ID | null | Kasa kartlarını hiyerarşik gruplandırmak için kullanılır. Örnek: Merkez -> TL| Opsiyonel
+Etiket1ID | null | Kasa etiketleri icindir. Örnek: Merkez | Opsiyonel
+SablonID | null | Kasa ekleme şablonu varsa girilmelidir. | Opsiyonel
+
+
+
+
+<aside class="success">
+Kasa oluştururken döküman altındaki örnek senaryo üzerinden gidebilirsiniz.
+</aside>
+
+
+## Kasa Düzenle
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"KasaID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "KasaKisaKodu": "00000000000002",
+        "KasaKisaAdi": "TL Kasa",
+        "Durum": true,
+        "TipID": 103001,
+        "KasaMuhasebeID": 201,
+        "DovizID": 1,
+        "Seviye": 1,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = JSON.stringify({"KasaID":-1,"SubeID":1,"SirketID":1,"KasaKodu":"00000000000002","KasaAdi":"TL Kasa","KasaKisaKodu":"00000000000002","KasaKisaAdi":"TL Kasa","Durum":true,"TipID":103001,"KasaMuhasebeID":201,"DovizID":1,"Seviye":1,"EntegrasyonTanimID":null,"Kod1ID":null,"Etiket1ID":null,"SablonID":null});
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/Kasa/post?KayitTipi=2',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kasa/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=2"
+
+payload="{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+        "Bakiye": null,
+        "BakiyeDvz": null,
+        "DevirTutar": null,
+        "DevirTutarDvz": null,
+        "DovizKodu": "TRY",
+        "SubeKodu": "SRKT.SUBE",
+        "SubeAdi": "Şubem",
+        "SirketKodu": "SRKT1",
+        "SirketAdi": "Şirket 1",
+        "EntegrasyonTanimKodu": null,
+        "EntegrasyonTanimAdi": null,
+        "TipAdi": "Kasa",
+        "TipKodu": null,
+        "OnayDurum": 1,
+        "OlsTar": "2021-02-19T12:37:38.53",
+        "DgsTar": "2021-02-19T12:37:38.53",
+        "OlsID": 2,
+        "OlsKodu": "yonetici",
+        "OlsAdi": "yonetici",
+        "DgsID": 2,
+        "DgsKodu": "yonetici",
+        "DgsAdi": "yonetici",
+        "Kod1Kodu": null,
+        "Kod1Adi": null,
+        "Etiket1Adi": null,
+        "SablonKodu": null,
+        "SablonAdi": null,
+        "ResimAdresi": null,
+        "EsnekAramaKisiti": "00000000000002 TL Kasa           ",
+        "KasaID": 6,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "DovizID": 1,
+        "Seviye": 0,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Durum": true,
+        "TipID": 103001,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+    },
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Kasa kartı düzeltmek içindir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | 2 KayitTipi=2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir.
+
+### Sorgu Body Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KasaID | Integer | Kasa ID'si girilmesi zorunludur.
+
+## Kasa Sil
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"KasaID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "KasaKisaKodu": "00000000000002",
+        "KasaKisaAdi": "TL Kasa",
+        "Durum": true,
+        "TipID": 103001,
+        "KasaMuhasebeID": 201,
+        "DovizID": 1,
+        "Seviye": 1,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = JSON.stringify({"KasaID":-1,"SubeID":1,"SirketID":1,"KasaKodu":"00000000000002","KasaAdi":"TL Kasa","KasaKisaKodu":"00000000000002","KasaKisaAdi":"TL Kasa","Durum":true,"TipID":103001,"KasaMuhasebeID":201,"DovizID":1,"Seviye":1,"EntegrasyonTanimID":null,"Kod1ID":null,"Etiket1ID":null,"SablonID":null});
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/Kasa/post?KayitTipi=-1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kasa/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=-1"
+
+payload="{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"KasaID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"KasaKodu\": \"00000000000002\",\r\n    \"KasaAdi\": \"TL Kasa\",\r\n    \"KasaKisaKodu\": \"00000000000002\",\r\n    \"KasaKisaAdi\": \"TL Kasa\",\r\n    \"Durum\": true,\r\n    \"TipID\": 103001,\r\n    \"KasaMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"Seviye\": 1,\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+        "Bakiye": null,
+        "BakiyeDvz": null,
+        "DevirTutar": null,
+        "DevirTutarDvz": null,
+        "DovizKodu": "TRY",
+        "SubeKodu": "SRKT.SUBE",
+        "SubeAdi": "Şubem",
+        "SirketKodu": "SRKT1",
+        "SirketAdi": "Şirket 1",
+        "EntegrasyonTanimKodu": null,
+        "EntegrasyonTanimAdi": null,
+        "TipAdi": "Kasa",
+        "TipKodu": null,
+        "OnayDurum": 1,
+        "OlsTar": "2021-02-19T12:37:38.53",
+        "DgsTar": "2021-02-19T12:37:38.53",
+        "OlsID": 2,
+        "OlsKodu": "yonetici",
+        "OlsAdi": "yonetici",
+        "DgsID": 2,
+        "DgsKodu": "yonetici",
+        "DgsAdi": "yonetici",
+        "Kod1Kodu": null,
+        "Kod1Adi": null,
+        "Etiket1Adi": null,
+        "SablonKodu": null,
+        "SablonAdi": null,
+        "ResimAdresi": null,
+        "EsnekAramaKisiti": "00000000000002 TL Kasa           ",
+        "KasaID": 6,
+        "KasaKodu": "00000000000002",
+        "KasaAdi": "TL Kasa",
+        "DovizID": 1,
+        "Seviye": 0,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Durum": true,
+        "TipID": 103001,
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null
+    },
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Kasa kartı silmek için
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kasa/post?KayitTipi=-1`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | -1 seçilerek mevcut kasanın silineceği bilgisi verilmiştir.
+
+
+
+
+
+<aside class="warning">
+Kasa düzenlemek ile silmek arasındaki fark KayitTipi=-1 olmasıdır. Kasayı silerken bağlı olduğu bütün fhareketlerden de silmeniz gerekmektedir. Aksi takdirde hata dönecektir.
+</aside>
+
+
+
+
+
+
+# BankaHesap
+
+## BankaHesapları Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/BankaHesap' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+
+var axios = require('axios');
+
+var config = {
+  method: 'get',
+  url: 'https://erp.aaro.com.tr/api/BankaHesap',
+  headers: {
+    'Authorization': 'Bearer YOURTOKEN'
+  }
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/BankaHesap");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/BankaHesap"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/BankaHesap")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "SayfalandirmaBilgisi": {
+        "maxSayfaSatirSayisi": 100,
+        "Sayfa": 1,
+        "SayfaSatirSayisi": 10,
+        "ToplamSatirSayisi": 4,
+        "ToplamSayfaSayisi": 1,
+        "OncekiSayfaVarMi": false,
+        "SonrakiSayfaVarMi": false,
+        "SayfaSatirSayisiAktifSayfada": 4
+    },
+"Model": [
+        {
+            "DovizKodu": "TRY",
+            "DovizAdi": null,
+            "Bakiye": null,
+            "BakiyeDvz": null,
+            "CariBankaHesapKodu": null,
+            "BankaSubeKodu": null,
+            "BankaSubeAdi": "YESILBAG",
+            "SubeKodu": "TUM",
+            "SubeAdi": "Tüm Şubeler",
+            "SirketKodu": "SRKT0",
+            "SirketAdi": "Şirket 0",
+            "EntegrasyonTanimKodu": "000000000000001",
+            "EntegrasyonTanimAdi": "İlk Cari Banka Hesabım",
+            "TipAdi": "Cari",
+            "TipKodu": null,
+            "OnayDurum": 1,
+            "OlsTar": "2020-09-30T10:34:13.237",
+            "DgsTar": "2020-09-30T10:34:13.237",
+            "OlsID": 0,
+            "OlsKodu": "TUM",
+            "OlsAdi": "",
+            "DgsID": 0,
+            "DgsKodu": "TUM",
+            "DgsAdi": "",
+            "Kod1Kodu": null,
+            "Kod1Adi": null,
+            "Etiket1Adi": null,
+            "SablonKodu": null,
+            "SablonAdi": null,
+            "ResimAdresi": null,
+            "EsnekAramaKisiti": "00001 İlk Ca No:1            ",
+            "BankaHesapID": 1,
+            "BankaSubeID": 1,
+            "HesapKodu": "00001",
+            "HesapAdi": "İlk Ca No:1",
+            "CariBankaHesapID": null,
+            "IbanNo": "TR000001",
+            "Tel": null,
+            "Fax": null,
+            "Email": null,
+            "Web": null,
+            "DovizID": 1,
+            "SubeID": 0,
+            "SirketID": 0,
+            "Durum": true,
+            "TipID": 108001,
+            "EntegrasyonTanimID": 2928,
+            "Kod1ID": null,
+            "Etiket1ID": null,
+            "SablonID": null
+        },
+        {
+          ...
+        },
+         {
+          ...
+        },
+    ],
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Bu uç nokta ile banka hesaplarınız toplu olarak ya da belirli bir kısıt ile getirebilirsiniz.
+
+
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/BankaHesap?`
+
+### URL Parametreleri
+
+Parameter | Değer | Tanım
+--------- | ----------- | ---------
+EsnekAramaKisiti | String | Dilediğiniz stringe göre listeleme yapabilirsiniz. Hesap kodunda, Hesap adında ,etiket adlarında, kod adlarında girilen string'e göre arama yapar.
+SiralamaKisiti | String | Gelen veriyi sıralamak için kullanılır. Durum, BankaHesapID gibi kolon adları verilmelidir.
+Sayfa | Integer | Kaç sayfa BankaHesap getirmek istediğiniz
+SayfaSatirSayisi |Integer | Getirilen sayfadaki BankaHesap limiti.
+BankaHesapID | Integer | Belirtilen ID ile BankaHesap getirmektedir.
+Durum | Boolean | True ise aktif, false ise pasif hesapları getirmektedir.
+TipID |Integer |BankaHesabın tipine göre çağırım için mevcuttur. (Tip ID listesinden bakınız)
+SubeID | Integer | Şube ID'sine göre hesapları getirmektedir.
+SirketID | Integer | Şirket ID'sine göre hesapları getirmektedir.
+BankaHesapMuhasebeID | Integer | BankaHesap Muhasebe ID'sine göre hesapları getirmektedir.
+OlsID | Integer | BankaHesab'ı Oluşturan kişi ID'sine göre hesapları getirmektedir.
+
+
+
+
+## BankaHesap Ekle
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"BankaHesapID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "HesapKodu": "00000000000002",
+        "HesapAdi": "TL Hesap",
+        "HesapKisaKodu": "00000000000002",
+        "HesapKisaAdi": "TL Hesap",
+        "Durum": true,
+        "TipID": 108001,
+        "BankaHesapMuhasebeID": 201, 
+        "DovizID": 1,
+        "BankaSubeID": 1,
+        "CariBankaHesapID": null,
+        "IbanNo": "TR00000000000000000000000",
+        "Tel": "00000000000",
+        "Fax": "00000",
+        "Email": "demo@aaro.com.tr",
+        "Web": "www.aaro.com.tr",
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null,
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = '{"BankaHesapID": -1,"SubeID": 1,"SirketID": 1,"HesapKodu": "00000000005552","HesapAdi": "TL Hesap","HesapKisaKodu": "00000000000002","HesapKisaAdi": "TL Hesap","Durum": true,"TipID": 108001,"BankaHesapMuhasebeID": 201, "DovizID": 1,"BankaSubeID": 1,"CariBankaHesapID": 1,"IbanNo": "TR00000000000000000000000","Tel": "00000000000","Fax": "00000","Email": "demo@aaro.com.tr","Web": "www.aaro.com.tr","EntegrasyonTanimID": null,"Kod1ID": null,"Etiket1ID": null,"SablonID": null}';
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/BankaHesap/post?KayitTipi=1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+
+payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+    "BankaHesapID": -1,
+    "SubeID": 1,
+    "SirketID": 1,
+    "HesapKodu": "00000000005552",
+    "HesapAdi": "TL Hesap",
+    "HesapKisaKodu": "00000000000002",
+    "HesapKisaAdi": "TL Hesap",
+    "Durum": true,
+    "TipID": 108001,
+    "BankaHesapMuhasebeID": 201,
+    "DovizID": 1,
+    "BankaSubeID": 1,
+    "CariBankaHesapID": 1,
+    "IbanNo": "TR00000000000000000000000",
+    "Tel": "00000000000",
+    "Fax": "00000",
+    "Email": "demo@aaro.com.tr",
+    "Web": "www.aaro.com.tr",
+    "EntegrasyonTanimID": null,
+    "Kod1ID": null,
+    "Etiket1ID": null,
+    "SablonID": null,
+    },
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Yeni bir banka hesap kartı eklemek için
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=1`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir.
+
+### Sorgu Body JSON açıklaması
+
+Parametre | Örnek Değer | Tanım | ZorunluMu
+--------- | ------- | ----------- | -----------
+BankaHesapID | -1 | Eklenilen ürünün BankaHesap ID'sidir. -1 girildiği takdirde rastgele olarak ID atanmaktadır.  | Evet
+SubeID | 1 | BankaHesapnın bulunduğu şubenin ID'sidir. | Evet
+SirketID | 1 | BankaHesapnın ait olduğu şirketin ID'sidir. | Evet
+HesapKodu | "000000000000001" | BankaHesapnın detaylı kodudur. | Evet
+HesapAdi | "MERKEZ Bankası" | BankaHesapnın gözüken adıdır. | Evet
+HesapKisaKodu |"MerBank" | BankaHesapnın genel kodudur. Genel kod özel kodların parentı olarak düşünülebilir. Aynı kategorideki kasaların aynı kisa koda sahip olması önemlidir. | Evet
+HesapKisaAdi |"Merkez BankaHesap" | BankaHesapnın genel adıdır. Genel ad özel adların parentı olarak düşünülebilir. Aynı kategorideki kasaların aynı kisa ada sahip olması önemlidir. | Evet
+Durum | true | BankaHesap kartının aktif veya pasif olduğunu belirlemektedir | Evet
+TipID | 108001 | BankaHesab'ınızın tipinin Pos veya Cari olduğunu belirler. Cari:108001, Pos:108004 | Evet
+BankaHesapMuhasebeID | 201 | BankaHesapların muhasebesebesi farklı şekilde işlenebilir. BankaHesap muhasebe ID hakkında detaylı bilgi için muhasebe bölümünü inceleyiniz | Evet
+DovizID | 1 | BankaHesabının döviz tipini belirtmelisiniz. Örn TL olması için 1 olmalıdır.  | Evet
+BankaSubeID | 1 | BankaHesap kartınızın hangi bankanın hangi şubesi olduğunu belirtir. Örn: YESILBAG - TÜRKİYE GARANTİ  | Evet
+CariBankaHesapID | 1 | Eğer bu kartın tipi 'CARİDEN' farklı ise bu alt hesabın bağlı olduğu cari hesap girilmelidir.Ana hesabı belirtir. Örn:VAKIFB No:5 (300.5)  | Evet(Koşullu)
+IbanNo | null | Bu banka hesabın iban numarasını belirtir. | Opsiyonel
+Tel | null | Bu banka hesaba ait telefon numarasını belirtir. | Opsiyonel
+Email | null | Bu banka hesaba ait email adresini belirtir. | Opsiyonel
+Fax | null | Bu banka hesaba ait fax numarasını belirtir. | Opsiyonel
+Web | null | Bu banka hesaba ait internet adresini belirtir. | Opsiyonel
+Kod1ID | null | BankaHesap kartlarını hiyerarşik gruplandırmak için kullanılır. Örnek: Ankara -> Ziraat| Opsiyonel
+Etiket1ID | null | BankaHesap etiketleri icindir. Örnek: Merkez | Opsiyonel
+SablonID | null | BankaHesap ekleme şablonu varsa girilmelidir. | Opsiyonel
+
+
+
+
+<aside class="success">
+BankaHesap oluştururken döküman altındaki örnek senaryo üzerinden gidebilirsiniz.
+</aside>
+
+## BankaHesap Düzenle
+
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"BankaHesapID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "HesapKodu": "00000000000002",
+        "HesapAdi": "TL Hesap",
+        "HesapKisaKodu": "00000000000002",
+        "HesapKisaAdi": "TL Hesap",
+        "Durum": true,
+        "TipID": 108001,
+        "BankaHesapMuhasebeID": 201, 
+        "DovizID": 1,
+        "BankaSubeID": 1,
+        "CariBankaHesapID": null,
+        "IbanNo": "TR00000000000000000000000",
+        "Tel": "00000000000",
+        "Fax": "00000",
+        "Email": "demo@aaro.com.tr",
+        "Web": "www.aaro.com.tr",
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null,
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = '{"BankaHesapID": -1,"SubeID": 1,"SirketID": 1,"HesapKodu": "00000000005552","HesapAdi": "TL Hesap","HesapKisaKodu": "00000000000002","HesapKisaAdi": "TL Hesap","Durum": true,"TipID": 108001,"BankaHesapMuhasebeID": 201, "DovizID": 1,"BankaSubeID": 1,"CariBankaHesapID": 1,"IbanNo": "TR00000000000000000000000","Tel": "00000000000","Fax": "00000","Email": "demo@aaro.com.tr","Web": "www.aaro.com.tr","EntegrasyonTanimID": null,"Kod1ID": null,"Etiket1ID": null,"SablonID": null}';
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/BankaHesap/post?KayitTipi=1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+
+payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+    "BankaHesapID": -1,
+    "SubeID": 1,
+    "SirketID": 1,
+    "HesapKodu": "00000000005552",
+    "HesapAdi": "TL Hesap",
+    "HesapKisaKodu": "00000000000002",
+    "HesapKisaAdi": "TL Hesap",
+    "Durum": true,
+    "TipID": 108001,
+    "BankaHesapMuhasebeID": 201,
+    "DovizID": 1,
+    "BankaSubeID": 1,
+    "CariBankaHesapID": 1,
+    "IbanNo": "TR00000000000000000000000",
+    "Tel": "00000000000",
+    "Fax": "00000",
+    "Email": "demo@aaro.com.tr",
+    "Web": "www.aaro.com.tr",
+    "EntegrasyonTanimID": null,
+    "Kod1ID": null,
+    "Etiket1ID": null,
+    "SablonID": null,
+},
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+BankaHesap kartı düzeltmek içindir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | 2 KayitTipi=2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir.
+
+### Sorgu Body Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+BankaHesapID | Integer | BankaHesap ID'si girilmesi zorunludur.
+
+## BankaHesap Sil
+
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"BankaHesapID": -1,
+        "SubeID": 1,
+        "SirketID": 1,
+        "HesapKodu": "00000000000002",
+        "HesapAdi": "TL Hesap",
+        "HesapKisaKodu": "00000000000002",
+        "HesapKisaAdi": "TL Hesap",
+        "Durum": true,
+        "TipID": 108001,
+        "BankaHesapMuhasebeID": 201, 
+        "DovizID": 1,
+        "BankaSubeID": 1,
+        "CariBankaHesapID": null,
+        "IbanNo": "TR00000000000000000000000",
+        "Tel": "00000000000",
+        "Fax": "00000",
+        "Email": "demo@aaro.com.tr",
+        "Web": "www.aaro.com.tr",
+        "EntegrasyonTanimID": null,
+        "Kod1ID": null,
+        "Etiket1ID": null,
+        "SablonID": null,
+}'
+
+```
+
+```javascript
+
+var axios = require('axios');
+var data = '{"BankaHesapID": -1,"SubeID": 1,"SirketID": 1,"HesapKodu": "00000000005552","HesapAdi": "TL Hesap","HesapKisaKodu": "00000000000002","HesapKisaAdi": "TL Hesap","Durum": true,"TipID": 108001,"BankaHesapMuhasebeID": 201, "DovizID": 1,"BankaSubeID": 1,"CariBankaHesapID": 1,"IbanNo": "TR00000000000000000000000","Tel": "00000000000","Fax": "00000","Email": "demo@aaro.com.tr","Web": "www.aaro.com.tr","EntegrasyonTanimID": null,"Kod1ID": null,"Etiket1ID": null,"SablonID": null}';
+
+var config = {
+  method: 'post',
+  url: 'https://localhost:44346/api/BankaHesap/post?KayitTipi=-1',
+  headers: { 
+    'Content-Type': 'application/json', 
+    'Authorization': 'Bearer YOURTOKEN'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=-1"
+
+payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "Model": {
+    "BankaHesapID": -1,
+    "SubeID": 1,
+    "SirketID": 1,
+    "HesapKodu": "00000000005552",
+    "HesapAdi": "TL Hesap",
+    "HesapKisaKodu": "00000000000002",
+    "HesapKisaAdi": "TL Hesap",
+    "Durum": true,
+    "TipID": 108001,
+    "BankaHesapMuhasebeID": 201,
+    "DovizID": 1,
+    "BankaSubeID": 1,
+    "CariBankaHesapID": 1,
+    "IbanNo": "TR00000000000000000000000",
+    "Tel": "00000000000",
+    "Fax": "00000",
+    "Email": "demo@aaro.com.tr",
+    "Web": "www.aaro.com.tr",
+    "EntegrasyonTanimID": null,
+    "Kod1ID": null,
+    "Etiket1ID": null,
+    "SablonID": null,
+},
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+BankaHesap kartı silmek içindir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+KayitTipi | Integer | 2 KayitTipi=2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir.
+
+### Sorgu Body Parametreleri
+
+Parametre | Değer | Tanım
+--------- | ----------- | ---------
+BankaHesapID | Integer | BankaHesap ID'si girilmesi zorunludur.
+
+
+<aside class="warning">
+BankaHesap düzenlemek ile silmek arasındaki fark KayitTipi=-1 olmasıdır. BankaHesap kartını silerken bağlı olduğu bütün hareketlerden de silmeniz gerekmektedir. Aksi takdirde hata dönecektir.
+</aside>
+
+
 
 
