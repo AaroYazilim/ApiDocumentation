@@ -4304,6 +4304,7 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Cari/post?KayitTipi=
     "CariAdi": "Aaro Yazilim",
     "VergiNo": "14110155",
     "TipID": 102001,
+    "Durum": true,
     "MuhasebeAlacakID":11,
     "MuhasebeBorcID":11,
     "VergiDairesiID":633
@@ -4322,7 +4323,7 @@ var options = {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer YOURTOKEN'
   },
-    body: JSON.stringify({"CariKodu":"000123S","CariAdi":"Aaro Yazilim","VergiNo":"14110155","TipID":102001,"MuhasebeAlacakID":11,"MuhasebeBorcID":11,"VergiDairesiID":633})
+    body: JSON.stringify({"CariKodu":"000123S","CariAdi":"Aaro Yazilim","VergiNo":"14110155","TipID":102001,"Durum":true,"MuhasebeAlacakID":11,"MuhasebeBorcID":11,"VergiDairesiID":633})
 
 };
 
@@ -4343,7 +4344,7 @@ client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("Content-Type", "application/json");
 request.AddHeader("Authorization", "Bearer YOURTOKEN");
-request.AddParameter("application/json", "{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}",  ParameterType.RequestBody);
+request.AddParameter("application/json", "{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"Durum\": true,\n   \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}",  ParameterType.RequestBody);
 IRestResponse response = client.Execute(request);
 Console.WriteLine(response.Content);
 ```
@@ -4354,7 +4355,7 @@ import requests
 
 url = "https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1"
 
-payload = "{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}"
+payload = "{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"Durum\": true,\n    \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}"
 headers = {
 
 
@@ -4371,7 +4372,7 @@ Unirest.setTimeouts(0, 0);
 HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1")
   .header("Content-Type", "application/json")
   .header("Authorization", "Bearer YOURTOKEN")
-.body("{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}")
+.body("{\n    \"CariKodu\": \"000123S\",\n    \"CariAdi\": \"Aaro Yazilim\",\n    \"VergiNo\": \"14110155\",\n    \"TipID\": 102001,\n    \"Durum\": true,\n    \"MuhasebeAlacakID\":11,\n    \"MuhasebeBorcID\":11,\n    \"VergiDairesiID\":633\n}")
   .asString();
 
 
@@ -4389,7 +4390,7 @@ HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Cari/p
         "SirketID": 0,
         "CariKodu": "000123S",
         "CariAdi": "Aaro Yazilim",
-        "Durum": false,
+        "Durum": true,
         "TipID": 102001,
         "VergiDairesiID": 633,
         "VergiNo": "14110155",
