@@ -404,7 +404,6 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=
         "Kod2ID": null,
         "Etiket1ID": null,
         "SablonID": null
-
 }'
 
 ```
