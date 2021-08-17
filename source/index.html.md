@@ -401,6 +401,7 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/Stok/post?KayitTipi=
         "Yogunluk": 3.0,
         "Agirlik": 5.0,
         "Kod1ID": null,
+        "Kod2ID": null,
         "Etiket1ID": null,
         "SablonID": null
 
