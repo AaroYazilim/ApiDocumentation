@@ -9136,7 +9136,7 @@ curl --location --request POST 'https://erp.aaro.com.tr/api/CariBanka/post?Kayit
 var request = require('request');
 var options = {
   'method': 'POST',
- 'url': 'https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1',
+ 'url': 'https://erp.aaro.com.tr/api/CariBanka/post?KayitTipi=1',
   'headers': {
     'Content-Type': 'application/json',
     'Authorization': 'Bearer YOURTOKEN'
@@ -9149,7 +9149,6 @@ var options = {
             Oncelik: true,
             DovizID: null
 })
-
 };
 
 };
@@ -9164,7 +9163,7 @@ request(options, function (error, response) {
 
 ```csharp
 
-var client = new RestClient("https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1");
+var client = new RestClient("https://erp.aaro.com.tr/api/CariBanka/post?KayitTipi=1");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("Content-Type", "application/json");
@@ -9178,8 +9177,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1"
-
+url = "https://erp.aaro.com.tr/api/CariBanka/post?KayitTipi=1"
 payload = "{\n  \"CariID\": 4920,\n \"IbanNo\": \"0\",\n \"BankaSubeID\": 13000,\n \"Durum\": true,\n \"Oncelik\": true,\n \"DovizID\": null   \n}"
 headers = {
 
@@ -9197,7 +9195,7 @@ Unirest.setTimeouts(0, 0);
 HttpResponse<String> response = Unirest.post("https://erp.aaro.com.tr/api/Cari/post?KayitTipi=1")
   .header("Content-Type", "application/json")
   .header("Authorization", "Bearer YOURTOKEN")
-.body("{\n  \"CariID\": 4920,\n \"IbanNo\": \"0\",\n \"BankaSubeID\": 13000,\n \"Durum\": true,\n \"Oncelik\": true,\n \"DovizID\": null   \n}")
+  .body("{\n  \"CariID\": 4920,\n \"IbanNo\": \"0\",\n \"BankaSubeID\": 13000,\n \"Durum\": true,\n \"Oncelik\": true,\n \"DovizID\": null   \n}")
   .asString();
 
 
