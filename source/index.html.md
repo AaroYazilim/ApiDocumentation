@@ -141,8 +141,8 @@ Kimlik doğrulama işleminin başarılı olması durumunda bir adet kimlik jeton
 
 Bu uç nokta ile stoklardaki ürünleri toplu olarak ya da belirli bir kısıt ile getirebilirsiniz.
 | Parametre | Değer | Tanım |
-| --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| TipID | Integer | 105001 Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
+| --------- | ------- | ------------------------------------------------------------ |
+| TipID | 105001 | Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
 
 ## Stoktaki Ürünleri Getir
 
@@ -1083,9 +1083,9 @@ Stok silmek ile düzenlemek arasındaki fark KayitTipi=-1 olmasıdır. Stoğu si
 
 # Demirbaş
 
-| Parametre | Değer   | Tanım                                                                                                                                                                                            |
-| --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| TipID     | Integer | 105003 Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Demirbaş da stok olarak düşünülmektedir dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
+| Parametre | Değer  | Tanım                                                                                                                                                                                     |
+| --------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TipID     | 105003 | Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Demirbaş da stok olarak düşünülmektedir dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
 
 ## Demirbaşları Getir
 
@@ -2028,9 +2028,9 @@ Demirbaş silmek ile düzenlemek arasındaki fark KayitTipi=-1 olmasıdır. Demi
 
 # GelirGider
 
-| Parametre | Değer   | Tanım                                                                                                                                                                                                       |
-| --------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TipID     | Integer | 105002 Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Gelir-Gider kartlarıda stok olarak düşünülmektedir dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
+| Parametre | Değer  | Tanım                                                                                                                                                                                                |
+| --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| TipID     | 105002 | Aaro'da stok yalnızca fiziksel bir malı işaret etmek durumunda değildir. Gelir-Gider kartlarıda stok olarak düşünülmektedir dolayısıyla ne tür bir stok olduğunu belirtmek için TipID bulunmaktadır. |
 
 ## GelirGider Getir
 
@@ -3484,11 +3484,11 @@ Barkod silmek ile düzenlemek arasındaki fark KayitTipi=-1 olmasıdır.
 
 # Depo
 
-| Parametre | Değer   | Tanım                                    |
-| --------- | ------- | ---------------------------------------- |
-| TipID     | Integer | 107001 Depo tipi olduğunu belirtir       |
-| TipID     | Integer | 107002 Ambar tipi olduğunu belirtir      |
-| TipID     | Integer | 107003 Belge Depo tipi olduğunu belirtir |
+| Parametre | Değer  | Tanım                             |
+| --------- | ------ | --------------------------------- |
+| TipID     | 107001 | Depo tipi olduğunu belirtir       |
+| TipID     | 107002 | Ambar tipi olduğunu belirtir      |
+| TipID     | 107003 | Belge Depo tipi olduğunu belirtir |
 
 ## Depoları Getir
 
@@ -4250,6 +4250,12 @@ Depoyu silmeden önce depoya ait bütün hareketlerin ve stoklar silindiğinden/
 </aside>
 
 # Döviz
+
+| Parametre | Değer | Tanım           |
+| --------- | ----- | --------------- |
+| DovizID   | 1     | Türk Lirası TL  |
+| DovizID   | 2     | Amerikan Doları |
+| DovizID   | 3     | Euro            |
 
 ## Dövizleri Getir
 
@@ -5865,10 +5871,10 @@ Bu işlemin geri dönüşü yoktur. Silmeden önce bu vergi dairesinin hareketle
 
 # Fiyat Listeleri
 
-| Parametre | Değer   | Tanım                      |
-| --------- | ------- | -------------------------- |
-| TipID     | Integer | 136001 Satış Fiyat Listesi |
-| TipID     | Integer | 136002 Alış Fiyat Listesi  |
+| Parametre | Değer  | Tanım               |
+| --------- | ------ | ------------------- |
+| TipID     | 136001 | Satış Fiyat Listesi |
+| TipID     | 136002 | Alış Fiyat Listesi  |
 
 ## Fiyat Listelerini Getir
 
@@ -6995,15 +7001,15 @@ Mevcut fiyat listesini silmektedir
 
 # Müşteri(Cari) / Tedarikçi
 
-| Parametre | Değer   | Tanım                                    |
-| --------- | ------- | ---------------------------------------- |
-| TipID     | Integer | 102001 Musteri tipi olduğunu belirtir    |
-| TipID     | Integer | 102002 Satici tipi olduğunu belirtir     |
-| TipID     | Integer | 102003 Karaliste tipi olduğunu belirtir  |
-| TipID     | Integer | 102004 Potansiyel tipi olduğunu belirtir |
-| TipID     | Integer | 102005 Personel tipi olduğunu belirtir   |
-| TipID     | Integer | 102006 Kamu tipi olduğunu belirtir       |
-| TipID     | Integer | 102007 Ortak tipi olduğunu belirtir      |
+| Parametre | Değer  | Tanım                             |
+| --------- | ------ | --------------------------------- |
+| TipID     | 102001 | Musteri tipi olduğunu belirtir    |
+| TipID     | 102002 | Satici tipi olduğunu belirtir     |
+| TipID     | 102003 | Karaliste tipi olduğunu belirtir  |
+| TipID     | 102004 | Potansiyel tipi olduğunu belirtir |
+| TipID     | 102005 | Personel tipi olduğunu belirtir   |
+| TipID     | 102006 | Kamu tipi olduğunu belirtir       |
+| TipID     | 102007 | Ortak tipi olduğunu belirtir      |
 
 ## Carileri Getir
 
@@ -10458,7 +10464,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+url = "https://localhost:44346/api/BankaHesap/post?KayitTipi=1"
 
 payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
 
@@ -10472,7 +10478,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=1")
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/BankaHesap/post?KayitTipi=1")
   .header("Content-Type", "application/json")
   .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
   .asString();
@@ -10559,7 +10565,7 @@ BankaHesap oluştururken döküman altındaki örnek senaryo üzerinden gidebili
 
 ```shell
 
-curl --location --request POST 'https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=1' \
+curl --location --request POST 'https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     	"BankaHesapID": -1,
@@ -10595,7 +10601,7 @@ var data =
 
 var config = {
   method: "post",
-  url: "https://localhost:44346/api/BankaHesap/post?KayitTipi=1",
+  url: "https://localhost:44346/api/BankaHesap/post?KayitTipi=2",
   headers: {
     "Content-Type": "application/json",
     Authorization: "Bearer YOURTOKEN",
@@ -10614,7 +10620,7 @@ axios(config)
 
 ```csharp
 
-var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=1");
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=2");
 client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddParameter("application/json", "{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}",  ParameterType.RequestBody);
@@ -10626,7 +10632,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+url = "https://localhost:44346/api/BankaHesap/post?KayitTipi=2"
 
 payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
 
@@ -10640,7 +10646,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=1")
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/BankaHesap/post?KayitTipi=2")
   .header("Content-Type", "application/json")
   .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
   .asString();
@@ -10770,7 +10776,7 @@ Console.WriteLine(response.Content);
 
 import requests
 
-url = "https://localhost:44346/api/Kasa/post?KayitTipi=-1"
+url = "https://localhost:44346/api/BankaHesap/post?KayitTipi=-1"
 
 payload="{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}"
 
@@ -10784,7 +10790,7 @@ print(response.text.encode('utf8'))
 ```java
 
 Unirest.setTimeouts(0, 0);
-HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kasa/post?KayitTipi=-1")
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/BankaHesap/post?KayitTipi=-1")
   .header("Content-Type", "application/json")
   .body("{\r\n    \"BankaHesapID\": -1,\r\n    \"SubeID\": 1,\r\n    \"SirketID\": 1,\r\n    \"HesapKodu\": \"00000000005552\",\r\n    \"HesapAdi\": \"TL Hesap\",\r\n    \"HesapKisaKodu\": \"00000000000002\",\r\n    \"HesapKisaAdi\": \"TL Hesap\",\r\n    \"Durum\": true,\r\n    \"TipID\": 108001,\r\n    \"BankaHesapMuhasebeID\": 201,\r\n    \"DovizID\": 1,\r\n    \"BankaSubeID\": 1,\r\n    \"CariBankaHesapID\": 1,\r\n    \"IbanNo\": \"TR00000000000000000000000\",\r\n    \"Tel\": \"00000000000\",\r\n    \"Fax\": \"00000\",\r\n    \"Email\": \"demo@aaro.com.tr\",\r\n    \"Web\": \"www.aaro.com.tr\",\r\n    \"EntegrasyonTanimID\": null,\r\n    \"Kod1ID\": null,\r\n    \"Etiket1ID\": null,\r\n    \"SablonID\": null,\r\n}")
   .asString();
@@ -10829,13 +10835,13 @@ BankaHesap kartı silmek içindir.
 
 ### HTTP Request
 
-`POST https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=2`
+`POST https://erp.aaro.com.tr/api/BankaHesap/post?KayitTipi=-1`
 
 ### Sorgu URL Parametreleri
 
-| Parametre | Değer   | Tanım                                                              |
-| --------- | ------- | ------------------------------------------------------------------ |
-| KayitTipi | Integer | 2 KayitTipi=2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir. |
+| Parametre | Değer   | Tanım                                                  |
+| --------- | ------- | ------------------------------------------------------ |
+| KayitTipi | Integer | -1 KayitTipi=-1 bütün API'de sil anlamına gelmektedir. |
 
 ### Sorgu Body Parametreleri
 
@@ -10846,3 +10852,4724 @@ BankaHesap kartı silmek içindir.
 <aside class="warning">
 BankaHesap düzenlemek ile silmek arasındaki fark KayitTipi=-1 olmasıdır. BankaHesap kartını silerken bağlı olduğu bütün hareketlerden de silmeniz gerekmektedir. Aksi takdirde hata dönecektir.
 </aside>
+
+# Dekont
+
+## Başlık Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/Dekont/Baslik?id=1' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+var axios = require("axios");
+
+var config = {
+  method: "get",
+  url: "https://erp.aaro.com.tr/api/Dekont/Baslik?id=1",
+  headers: {
+    Authorization: "Bearer YOURTOKEN",
+  },
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/Dekont/Baslik?id=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/Dekont/Baslik?id=1"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Dekont/Baslik?id=1")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 1,
+    "Tarih": "2015-08-04T00:00:00",
+    "BelgeNo": "A0000000001",
+    "RefBelgeNo": "A0000000001",
+    "Vade": "2015-08-04T00:00:00",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 0,
+    "Durum": true,
+    "Aciklama": "",
+    "OnayDurum": 1,
+    "OlsTar": "2016-01-01T14:52:49.183",
+    "DgsTar": "2016-01-01T14:52:49.183",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": 1,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": "2015-09-06T00:00:00",
+    "Kapali": true,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 2,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 10013,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 0,
+    "DgsID": 0,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu uç nokta ile kayıtlı olan dekontun DekontID'si gönderilerek başlık bilgisi alınabilir. Aynı bilgiye Başlıkları Getir sekmesinde DekontID kısıtı gönderilerekte ulaşılabilir.
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/Dekont/Baslik?id=1`
+
+### URL Parametreleri
+
+| Parameter | Değer   | Tanım                                           |
+| --------- | ------- | ----------------------------------------------- |
+| id        | Integer | Belirtilen ID ile Dekont Başlığı getirmektedir. |
+
+## Başlıkları Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/Dekont/Basliklar' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+var axios = require("axios");
+
+var config = {
+  method: "get",
+  url: "https://erp.aaro.com.tr/api/Dekont/Basliklar",
+  headers: {
+    Authorization: "Bearer YOURTOKEN",
+  },
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/Dekont/Basliklar");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/Dekont/Basliklar"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Dekont/Basliklar")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+    "SayfalandirmaBilgisi": {
+        "maxSayfaSatirSayisi": 100,
+        "Sayfa": 1,
+        "SayfaSatirSayisi": 10,
+        "ToplamSatirSayisi": 131020,
+        "ToplamSayfaSayisi": 13102,
+        "OncekiSayfaVarMi": false,
+        "SonrakiSayfaVarMi": true,
+        "SayfaSatirSayisiAktifSayfada": 10
+    },
+    "Model": [
+        {
+            "DekontID": 1,
+            "Tarih": "2015-08-04T00:00:00",
+            "BelgeNo": "A0000000001",
+            "RefBelgeNo": null,
+            "Vade": "2015-08-04T00:00:00",
+            "Tutar": 0.000000,
+            "YedekT": 0.0,
+            "Seviye": 0,
+            "Durum": false,
+            "Aciklama": "",
+            "OnayDurum": 0,
+            "OlsTar": "2016-01-01T14:52:49.183",
+            "DgsTar": "2016-01-01T14:52:49.183",
+            "YedekN1": null,
+            "YedekN2": null,
+            "YedekN3": null,
+            "YedekC1": null,
+            "YedekC2": null,
+            "YedekC3": null,
+            "YedekI1": null,
+            "YedekI2": null,
+            "YedekI3": null,
+            "RefTeslimTarihi": null,
+            "Kapali": false,
+            "eFatura": false,
+            "eFaturaUUID": null,
+            "eFaturaProfilID": null,
+            "eFaturaTipID": null,
+            "eFaturaDurumID": null,
+            "eFaturaTurID": null,
+            "eArsivInternetSatisSablon": null,
+            "MagazaSiparisID": null,
+            "Etiket1ID": null,
+            "Etiket2ID": null,
+            "Etiket3ID": null,
+            "Etiket4ID": null,
+            "Etiket5ID": null,
+            "KopyaKaynakID": null,
+            "SubeID": 0,
+            "SirketID": 0,
+            "Sube2ID": null,
+            "TipID": 10013,
+            "TipAltID": null,
+            "AciklamalarID": null,
+            "OlsID": 0,
+            "DgsID": 0,
+            "RefSozlesmeID": null,
+            "RefDepoID": null,
+            "RefKDVDahil": null,
+            "RefProjeID": null,
+            "RefPlasiyerID": null,
+            "RefDepo2ID": null,
+            "RefIthalatIhracatID": null,
+            "KartAdi": null
+        },
+        {
+          ...
+        },
+         {
+          ...
+        },
+    ],
+    "Mesajlar": {},
+    "Sonuc": true,
+    "MesajlarTumu": ""
+}
+```
+
+Bu uç nokta ile kayıtlı olan tüm dekontların filtrelenerek listesi alınabilir.
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/Dekont/Basliklar?`
+
+### URL Parametreleri
+
+| Parameter        | Değer    | Tanım                                                                                                                                              |
+| ---------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EsnekAramaKisiti | String   | Dilediğiniz stringe göre listeleme yapabilirsiniz. Hesap kodunda, Hesap adında ,etiket adlarında, kod adlarında girilen string'e göre arama yapar. |
+| SiralamaKisiti   | String   | Gelen veriyi sıralamak için kullanılır. Durum, BankaHesapID gibi kolon adları verilmelidir.                                                        |
+| Sayfa            | Integer  | Kaç sayfa BankaHesap getirmek istediğiniz                                                                                                          |
+| SayfaSatirSayisi | Integer  | Getirilen sayfadaki BankaHesap limiti.                                                                                                             |
+| DekontID         | Integer  | Belirtilen ID ile Dekont Başlığı getirmektedir.                                                                                                    |
+| TarihBas         | DateTime | Bu tarihten itibaren oluşturulmuş başlıkları getirir.                                                                                              |
+| TarihBit         | DateTime | Bu tarihe kadar oluşturulmuş başlıkları getirir.                                                                                                   |
+| Durum            | Boolean  | True ise aktif, false ise pasif hesapları getirmektedir.                                                                                           |
+| TipID            | Integer  | Dekontun tipine göre başlıkları getirmenizi sağlar.Satış Faturası içi 10005. (Tip ID listesinden bakınız)                                          |
+| SubeID           | Integer  | Şube ID'sine göre hesapları getirmektedir.                                                                                                         |
+| SirketID         | Integer  | Şirket ID'sine göre hesapları getirmektedir.                                                                                                       |
+| OlsID            | Integer  | BankaHesab'ı Oluşturan kişi ID'sine göre hesapları getirmektedir.                                                                                  |
+
+## KalemTek Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+var axios = require("axios");
+
+var config = {
+  method: "get",
+  url: "https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1",
+  headers: {
+    Authorization: "Bearer YOURTOKEN",
+  },
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1"
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 6,
+    "Cari": null,
+    "Stok": null,
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": {
+      "CariAdresID": null,
+      "CariDetayID": null,
+      "MuhtelifCariAdi": null,
+      "MuhtelifVergiNo": null,
+      "MuhtelifVergiDairesi": null,
+      "MuhtelifAdres": null,
+      "MuhtelifTel": null,
+      "CariBankaID": null,
+      "BABSTutar": 0.0,
+      "BeklenenTahsilatOdemeID": null
+    },
+    "SiparisStok": null,
+    "HareketID": 1,
+    "DekontID": 1,
+    "SubeID": 2,
+    "SirketID": 1,
+    "TipID": 10013,
+    "YevmiyeFisHareketID": null,
+    "KartID": 3963,
+    "Tarih": "2015-08-04T00:00:00",
+    "Vade": "2015-08-04T00:00:00",
+    "BA": "B",
+    "Tutar": 61000.049976,
+    "Miktar": 0.0,
+    "DovizID": 1,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": true,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 1,
+    "OlsID": 0,
+    "OlsTar": "2016-01-01T14:52:53.35",
+    "DgsID": 0,
+    "DgsTar": "2016-01-01T14:52:53.35",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": "HÜRRİYET AYANA (ÖZYÖN MAKİNA)"
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu uç nokta ile kayıtlı olan Dekontun KalemTek bilgisi alınabilir. Nerdeyse tüm dekont tiplerinin vardır. Eğer yoksa boş sonuç döndürür.
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/Dekont/KalemTek?DekontID=1`
+
+### URL Parametreleri
+
+| Parameter | Değer   | Tanım                                           |
+| --------- | ------- | ----------------------------------------------- |
+| DekontID  | Integer | Belirtilen ID ile Dekont Başlığı getirmektedir. |
+
+## Kalemler Getir
+
+```shell
+
+curl --location --request GET 'https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti="OlsTar"' \
+--header 'Authorization: Bearer YOURTOKEN'
+
+```
+
+```javascript
+var axios = require("axios");
+
+var config = {
+  method: "get",
+  url: 'https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti="OlsTar"',
+  headers: {
+    Authorization: "Bearer YOURTOKEN",
+  },
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti=\"OlsTar\"");
+client.Timeout = -1;
+var request = new RestRequest(Method.GET);
+request.AddHeader("Authorization", "Bearer YOURTOKEN");
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+
+```
+
+```python
+
+import requests
+
+url = "https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti=\"OlsTar\""
+
+payload = {}
+headers = {
+  'Authorization': 'Bearer YOURTOKEN'
+}
+
+response = requests.request("GET", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.get("https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti=\"OlsTar\"")
+  .header("Authorization", "Bearer YOURTOKEN")
+  .asString();
+
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "SayfalandirmaBilgisi": {
+    "maxSayfaSatirSayisi": 100,
+    "Sayfa": 1,
+    "SayfaSatirSayisi": 10,
+    "ToplamSatirSayisi": 2,
+    "ToplamSayfaSayisi": 1,
+    "OncekiSayfaVarMi": false,
+    "SonrakiSayfaVarMi": false,
+    "SayfaSatirSayisiAktifSayfada": 2
+  },
+  "Model": [
+    {
+      "KalemTipi": 2,
+      "Cari": null,
+      "Stok": {
+        "BrmFiyatN": 50.0,
+        "BrmFiyatB": 10.4,
+        "BrmFiyatTipi": 1,
+        "VergiAltID": null,
+        "VergiOran": null,
+        "StokDetayID": null,
+        "DepoID": 1,
+        "CariID": 4920,
+        "GelirGiderCariID": null,
+        "DemirbasID": null,
+        "GelirGiderDekontID": null,
+        "OtomatikKalem": null,
+        "RafID": null,
+        "PromosyonID": null,
+        "PaketID": null,
+        "KarmaKoliID": null,
+        "KarmaKoliAdet": null,
+        "IrsaliyeID": null,
+        "YuklemeID": null,
+        "NakliyeID": null,
+        "SiparisHareketID": null,
+        "DepoKabulID": null,
+        "IskontoTipi": true,
+        "IskontoOrani": 0.0,
+        "VadeIskontoOrani": 9.426919,
+        "KullaniciIskontoOrani": 16.0,
+        "TransferHareketID": null,
+        "IthalatIhracatID": null,
+        "UstHareketID": null,
+        "GelenEFaturaStokBilgileri": null,
+        "VergiDetaylari": [
+          {
+            "__TabloID": 3019,
+            "__ProgramID": 3009,
+            "VergiDetayID": 253175,
+            "StokHareketID": 804203,
+            "VergiID": 1,
+            "VergiAltID": null,
+            "VergiMuafiyetID": null,
+            "Oran": 18.0,
+            "Tutar": 9.0,
+            "TutarDvz": 0.0,
+            "Matrah": 50.0,
+            "MatrahDvz": 0.0,
+            "BA": "A",
+            "DovizID": 1,
+            "StokHareket": null,
+            "Vergi": null,
+            "VergiAlt": null,
+            "VergiMuafiyet": null,
+            "Doviz": null
+          }
+        ]
+      },
+      "Banka": null,
+      "Kasa": null,
+      "CekSenet": null,
+      "SiparisCari": null,
+      "SiparisStok": null,
+      "HareketID": 804203,
+      "DekontID": 190322,
+      "SubeID": 1,
+      "SirketID": 1,
+      "TipID": 10005,
+      "YevmiyeFisHareketID": 730501,
+      "KartID": 3658,
+      "Tarih": "2021-09-22T00:00:00",
+      "Vade": "2021-09-22T00:00:00",
+      "BA": "A",
+      "Tutar": 50.0,
+      "Miktar": 1.0,
+      "DovizID": 1,
+      "TutarDvz": 0.0,
+      "SozlesmeID": null,
+      "ProjeID": null,
+      "PlasiyerID": null,
+      "Durum": true,
+      "Aciklama": null,
+      "AciklamalarID": null,
+      "OnayDurum": 1,
+      "OlsID": 2,
+      "OlsTar": "2021-09-22T16:29:48.223",
+      "DgsID": 2,
+      "DgsTar": "2021-09-23T08:38:51.907",
+      "YedekD1": null,
+      "YedekD2": null,
+      "YedekD3": null,
+      "YedekS1": null,
+      "YedekS2": null,
+      "YedekS3": null,
+      "YedekI1": null,
+      "YedekI2": null,
+      "YedekI3": null,
+      "KartAdi": "Profil Seren Ahşap Ladin   3.0X4.3X300cm"
+    },
+    {
+      "KalemTipi": 2,
+      "Cari": null,
+      "Stok": {
+        "BrmFiyatN": 5.1,
+        "BrmFiyatB": 5.1,
+        "BrmFiyatTipi": 0,
+        "VergiAltID": null,
+        "VergiOran": null,
+        "StokDetayID": null,
+        "DepoID": 1,
+        "CariID": 4920,
+        "GelirGiderCariID": null,
+        "DemirbasID": null,
+        "GelirGiderDekontID": null,
+        "OtomatikKalem": null,
+        "RafID": null,
+        "PromosyonID": null,
+        "PaketID": null,
+        "KarmaKoliID": null,
+        "KarmaKoliAdet": null,
+        "IrsaliyeID": null,
+        "YuklemeID": null,
+        "NakliyeID": null,
+        "SiparisHareketID": null,
+        "DepoKabulID": null,
+        "IskontoTipi": false,
+        "IskontoOrani": 0.0,
+        "VadeIskontoOrani": 0.0,
+        "KullaniciIskontoOrani": 0.0,
+        "TransferHareketID": null,
+        "IthalatIhracatID": null,
+        "UstHareketID": null,
+        "GelenEFaturaStokBilgileri": null,
+        "VergiDetaylari": [
+          {
+            "__TabloID": 3019,
+            "__ProgramID": 3009,
+            "VergiDetayID": 253176,
+            "StokHareketID": 804206,
+            "VergiID": 1,
+            "VergiAltID": null,
+            "VergiMuafiyetID": null,
+            "Oran": 18.0,
+            "Tutar": 0.918,
+            "TutarDvz": 0.0,
+            "Matrah": 5.1,
+            "MatrahDvz": 0.0,
+            "BA": "A",
+            "DovizID": 1,
+            "StokHareket": null,
+            "Vergi": null,
+            "VergiAlt": null,
+            "VergiMuafiyet": null,
+            "Doviz": null
+          }
+        ]
+      },
+      "Banka": null,
+      "Kasa": null,
+      "CekSenet": null,
+      "SiparisCari": null,
+      "SiparisStok": null,
+      "HareketID": 804206,
+      "DekontID": 190322,
+      "SubeID": 1,
+      "SirketID": 1,
+      "TipID": 10005,
+      "YevmiyeFisHareketID": 730506,
+      "KartID": 3919,
+      "Tarih": "2021-09-22T00:00:00",
+      "Vade": "2021-09-22T00:00:00",
+      "BA": "A",
+      "Tutar": 5.1,
+      "Miktar": 1.0,
+      "DovizID": 1,
+      "TutarDvz": 0.0,
+      "SozlesmeID": null,
+      "ProjeID": null,
+      "PlasiyerID": null,
+      "Durum": true,
+      "Aciklama": "",
+      "AciklamalarID": null,
+      "OnayDurum": 1,
+      "OlsID": 2,
+      "OlsTar": "2021-09-23T08:38:44.003",
+      "DgsID": 2,
+      "DgsTar": "2021-09-23T08:38:52.073",
+      "YedekD1": null,
+      "YedekD2": null,
+      "YedekD3": null,
+      "YedekS1": null,
+      "YedekS2": null,
+      "YedekS3": null,
+      "YedekI1": null,
+      "YedekI2": null,
+      "YedekI3": null,
+      "KartAdi": "Tutkal KG Üreformaldehid  1kg"
+    }
+  ],
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu uç nokta ile kayıtlı olan Dekontunkalemleri okunabilir.
+
+### HTTP Request
+
+`GET https://erp.aaro.com.tr/api/Dekont/Kalemler?DekontID=190322&HareketID=null&SiralamaKisiti="OlsTar"`
+
+### URL Parametreleri
+
+| Parameter      | Değer   | Tanım                                                                    | Zorunlu |
+| -------------- | ------- | ------------------------------------------------------------------------ | ------- |
+| DekontID       | Integer | Belirtilen ID ile Dekont Başlığı getirmektedir.                          | Evet    |
+| HareketID      | Integer | Belirtilen ID ile dekonta ait kalem bilgisi getirilmektedir.             | Hayır   |
+| SiralamaKisiti | string  | Belirtilen kısıta göre göre artan şekilde sıralayarak kalemleri getirir. | Hayır   |
+
+## Dekont Baslik Yapisi (BaslikModel)
+
+| Parameter                 | Değer                     | Tanım                                                      | Zorunlu |
+| ------------------------- | ------------------------- | ---------------------------------------------------------- | ------- |
+| DekontID                  | Integer                   | Belirtilen ID ile Dekont Başlığı getirmektedir.            | Evet    |
+| TipID                     | HareketTurleriEnum        | Dekontun tipini ifade eder.                                | Evet    |
+| Tarih                     | DateTime                  | Dekontun tarihini ifade eder.                              | Evet    |
+| BelgeNo                   | String                    | Dekontun belge numarasıdır.                                | Evet    |
+| Vade                      | DateTime                  | Dekontun tarihini ifade eder.                              | Evet    |
+| Seviye                    | Byte                      |                                                            | Hayır   |
+| Durum                     | Bool                      | Dekontun aktif pasif olamasını sağlar. Default değeri true | Hayır   |
+| Kapali                    | Bool                      | Sipariş ve tekliflerde belgenin kapatılabilmesi için.      | Hayır   |
+| Tutar                     | Decimal                   | Dekontun tutarıdır. bilgi amaçlıdır                        | Hayır   |
+| KartAdi                   | String                    | Dekontun tutarıdır. bilgi amaçlıdır                        | Hayır   |
+| eFatura                   | Bool                      |                                                            | Hayır   |
+| eFaturaUUID               | String                    |                                                            | Hayır   |
+| eFaturaProfilID           | Nullable eBelgeProfilleri |                                                            | Hayır   |
+| eFaturaTipID              | Nullable eBelgeTipleri    |                                                            | Hayır   |
+| eFaturaDurumID            | Nullable eFaturaDurumlari |                                                            | Hayır   |
+| eFaturaTurID              | Nullable eBelgeTurleri    |                                                            | Hayır   |
+| eArsivInternetSatisSablon | String                    |                                                            | Hayır   |
+| MagazaSiparisID           | Nullable Integer          |                                                            | Hayır   |
+| Etiket1ID                 | Nullable Integer          |                                                            | Hayır   |
+| Etiket2ID                 | Nullable Integer          |                                                            | Hayır   |
+| Etiket3ID                 | Nullable Integer          |                                                            | Hayır   |
+| Etiket4ID                 | Nullable Integer          |                                                            | Hayır   |
+| Etiket5ID                 | Nullable Integer          |                                                            | Hayır   |
+| KopyaKaynakID             | Nullable Integer          |                                                            | Hayır   |
+| RefSozlesmeID             | Nullable Integer          |                                                            | Hayır   |
+| RefDepoID                 | Nullable Integer          |                                                            | Hayır   |
+| RefProjeID                | Nullable Integer          |                                                            | Hayır   |
+| RefPlasiyerID             | Nullable Integer          |                                                            | Hayır   |
+| RefDepo2ID                | Nullable Integer          |                                                            | Hayır   |
+| RefPlasiyerID             | Nullable Integer          |                                                            | Hayır   |
+| RefIthalatIhracatID       | Nullable Integer          |                                                            | Hayır   |
+| RefKDVDahil               | Nullable Bool             |                                                            | Hayır   |
+
+```Json
+{
+    "DekontID": 0,
+    "TipID": "SatisFaturasi",
+    "SirketID": 0,
+    "SubeID": 0,
+    "BelgeNo": "000000000000001",
+    "Tarih": "23.09.2021",
+    "Vade": "23.09.2021",
+    "Aciklama": "SatisFaturasi",
+}
+```
+
+## Dekont Kalem Yapısı (KalemModel)
+
+KalemModel genel olarak şu şekilde özetlenebilir.
+
+Kalem Tipi,
+Kalem Genel Bilgisi.
+Kalem Tip Özel Bilgisi,
+
+### Kalem Tipi
+
+Kalem Tipi bilgisi dekont oluşturulurken eklenecek kalemlerin tipini belirtir. Zorunludur. Alabileceği değerler aşağıdaki tabloda belirtilmiştir.
+
+| KalemTipi   | Değer            | Tanım                                                                                                                                        |
+| ----------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cari        | 1, "Cari"        | Nakit Tahsilat, Nakit Ödeme, Satış Faturası, Alış Faturası hareketlerinde KalemTek olarak gönderilir.                                        |
+| Stok        | 2, "Stok"        | Alış Faturası, Satış Faturası gibi hareketlerde KalemCok bilgisi olarak gönderilir                                                           |
+| Banka       | 3, "Banka"       | Havale/Eft Alma, Havale/Eft Gönderme, Pos Tahsilat gibi hareketlerde KalemCok bilgisi olarak gönderilir.                                     |
+| Kasa        | 4, "Kasa"        | Nakit Tahsilat, Nakit Ödeme, Kasa Hesaplar Arası Transfer gibi hareketlerde KalemCok bilgisi olarak gönderilir.                              |
+| CekSenet    | 5, "CekSenet"    | Çek/Senet Ciro Edildi/Verildi, Çek Bankaya Tahsile Verildi, Çek Bankadan Tahsil Edildi gibi hareketlerde KalemCok bilgisi olarak gönderilir. |
+| SiparisCari | 6, "SiparisCari" | Alınan Sipariş, Verilen Sipariş gib hareketlerde KalemTek olarak gönderilir.                                                                 |
+| SiparisStok | 7, "SiparisStok" | Alınan Sipariş, Verilen Sipariş gib hareketlerde KalemCok olarak gönderilir.                                                                 |
+
+### Kalem Genel Bilgisi
+
+KalemModel içindeki bu alanlar tüm kalem tiplerinde ortaktır. Hepsinde kullanılırlar.
+
+| Parametre | Değer    | Tanım                                                                                                                                 | Zorunlu |
+| --------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| KalemTipi | Integer  | Hareketi oluşturulacak Kalemin Tipini belirtir.                                                                                       | Evet    |
+| DekontID  | Integer  | Dekontun ID'sidir.                                                                                                                    | Evet    |
+| HareketID | Integer  | Dekonta eklenen kalemin HareketID'sidir. Dekonta kalem eklemek aynı zamanda Dekont'a ait hareket eklemek anlamına da gelir            | Evet    |
+| SubeID    | Integer  | Hareketin ait olduğu şubenin ID'sidir.                                                                                                | Evet    |
+| SirketID  | Integer  | Hareketin ait olduğu şirketin ID'sidir.                                                                                               | Evet    |
+| KartID    | Integer  | Harekette kullanılan Stok, GelirGider, Kasa, Banka, Cari, CekSenet gibi kartların ID'sidir.                                           | Evet    |
+| Miktar    | Decimal  | Eklenen kalemin miktarını belirtir. Kalemin birimi cinsinden belirtilmelidir. Kaç kilo, adet yada km gibi.                            | Evet    |
+| Tutar     | Decimal  | Eklenen hareketin tutar bilgisidir.                                                                                                   | Evet    |
+| DovizID   | Integer  | Harekete ait tutarın döviz cinsini belirtir. TL ise 1 girilmelidir. TL'den farklı bir döviz cinsi kullanılacaksa TutarDvz zorunludur. | Evet    |
+| TutarDvz  | Decimal  | Eklenen hareketin belirtilen döviz cinsinden tutar bilgisidir                                                                         | Hayır   |
+| Tarih     | DateTime | Harekete ait tarih bilgisidir.                                                                                                        | Hayır   |
+| Vade      | DateTime | Harekete ait tarih bilgisidir.                                                                                                        | Hayır   |
+| BA        | String   | Eklenen kalemin borc mu alacak mı olduğunu belirtir.                                                                                  | Hayır   |
+| Aciklama  | String   | Kalem için eklenmek istenen açıklama bilgisidir. KalemTek içinde gönderilirse dekontun açıklaması olur                                | Hayır   |
+| KartAdi   | String   | Bilgi amaçlıdır. Kalemde kullanılan kartın ID'sidir.                                                                                  | Hayır   |
+
+```Json
+{
+    "KalemTipi": "SiparisStok",
+    "DekontID": 190324,
+    "KartID": "3658",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+}
+```
+
+### Kalem Tip Özel Bilgisi
+
+KalemModel içerisinde eklenen kalem tipi için ayrıca gerekecek alanların tanımlandığı modellerdir.
+
+#### CariKalem
+
+| Parametre               | Değer            | Tanım                                                                                       |
+| ----------------------- | ---------------- | ------------------------------------------------------------------------------------------- |
+| CariAdresID             | Nullable Integer | Cari'ye ait adres blgisini tutan Adres kartının ID'sidir.Sevk adresindeki bilgiler içindir. |
+| CariDetayID             | Nullable Integer | Alt carilere bağlamak için.                                                                 |
+| CariBankaID             | Nullable Integer | Havale vs gibi işlemler için.                                                               |
+| BeklenenTahsilatOdemeID | Nullable Integer |                                                                                             |
+| MuhtelifCariAdi         | string           |                                                                                             |
+| MuhtelifVergiNo         | string           |                                                                                             |
+| MuhtelifVergiDairesi    | string           |                                                                                             |
+| MuhtelifAdres           | string           |                                                                                             |
+| MuhtelifTel             | string           |                                                                                             |
+| BABSTutar               | Decimal          |                                                                                             |
+
+```Json
+{
+    "KalemTipi": "Cari",
+    "DekontID": 190324,
+    "KartID": "4920",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "Cari" : {
+     "CariAdresID": 1,
+     "CariDetayID": null,
+     "CariBankaID":null,
+     "BeklenenTahsilatOdemeID":null,
+     "MuhtelifCariAdi":"",
+     "MuhtelifVergiNo":"",
+     "MuhtelifVergiDairesi":"",
+     "MuhtelifAdres":"",
+     "MuhtelifTel":"",
+     "BABSTutar:0
+    }
+}
+```
+
+#### StokKalem
+
+| Parametre                 | Değer                                 | Tanım |
+| ------------------------- | ------------------------------------- | ----- |
+| BrmFiyatN                 | Decimal                               |       |
+| BrmFiyatB                 | Decimal                               |       |
+| BrmFiyatTipi              | BirimFiyatTipleri                     |       |
+| DepoID                    | Integer                               |       |
+| IskontoTipi               | Bool                                  |       |
+| IskontoOrani              | Decimal                               |       |
+| VadeIskontoOrani          | Decimal                               |       |
+| KullaniciIskontoOrani     | Decimal                               |       |
+| GelenEFaturaStokBilgileri | String                                |       |
+| VergiDetaylari            | List of StokHareketleriVergiDetaylari |       |
+| KullaniciIskontoOrani     | Decimal                               |       |
+| OtomatikKalem             | Nullable Bool                         |       |
+| KarmaKoliAdet             | Nullable Decimal                      |       |
+| VergiOran                 | Nullable Decimal                      |       |
+| VergiAltID                | Nullable Integer                      |       |
+| StokDetayID               | Nullable Integer                      |       |
+| CariID                    | Nullable Integer                      |       |
+| GelirGiderCariID          | Nullable Integer                      |       |
+| DemirbasID                | Nullable Integer                      |       |
+| GelirGiderDekontID        | Nullable Integer                      |       |
+| RafID                     | Nullable Integer                      |       |
+| PromosyonID               | Nullable Integer                      |       |
+| PaketID                   | Nullable Integer                      |       |
+| KarmaKoliID               | Nullable Integer                      |       |
+| IrsaliyeID                | Nullable Integer                      |       |
+| YuklemeID                 | Nullable Integer                      |       |
+| NakliyeID                 | Nullable Integer                      |       |
+| SiparisHareketID          | Nullable Integer                      |       |
+| DepoKabulID               | Nullable Integer                      |       |
+| IthalatIhracatID          | Nullable Integer                      |       |
+| TransferHareketID         | Nullable Integer                      |       |
+| KarmaKoliID               | Nullable Integer                      |       |
+| UstHareketID              | Nullable Integer                      |       |
+| KarmaKoliID               | Nullable Integer                      |       |
+| UstHareketID              | Nullable Integer                      |       |
+
+```Json
+{
+    "KalemTipi": "Stok",
+    "DekontID": 190324,
+    "KartID": "3658",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "Stok" : {
+     "BrmFiyatN": 1,
+     "BrmFiyatB": 21.12,
+     "BrmFiyatTipi":12.21,
+     "DepoID":1,
+     "IskontoOrani":0,
+     "VadeIskontoOrani":0,
+     "KullaniciIskontoOrani":0,
+     "GelenEFaturaStokBilgileri":0,
+     "VergiDetaylari":[
+                        {
+                        ...
+                        },
+                        {
+                        ...
+                        }
+                    ],
+    }
+}
+```
+
+#### BankaKalem
+
+| Parametre       | Değer            | Tanım |
+| --------------- | ---------------- | ----- |
+| CekSenetID      | Nullable Integer |       |
+| KrediPosKosulID | Nullable Integer |       |
+
+```Json
+{
+    "KalemTipi": "Banka",
+    "DekontID": 190324,
+    "KartID": "4920",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "Banka" : {
+     "CekSenetID": null,
+     "KrediPosKosulID":null,
+    }
+}
+```
+
+#### KasaKalem
+
+| Parametre | Değer | Tanım |
+| --------- | ----- | ----- |
+
+```Json
+{
+    "KalemTipi": "Kasa",
+    "DekontID": 190324,
+    "KartID": "4920",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "Kasa" : {
+    }
+}
+```
+
+#### CekSenetKalem
+
+| Parametre         | Değer                         | Tanım |
+| ----------------- | ----------------------------- | ----- |
+| CekSenetID        | Integer                       |       |
+| SubeID            | Integer                       |       |
+| SirketID          | Integer                       |       |
+| TipID             | TabloTipleri                  |       |
+| Tutar             | Decimal                       |       |
+| DovizID           | Integer                       |       |
+| TutarDvz          | Decimal                       |       |
+| Tarih             | DateTime                      |       |
+| Vade              | DateTime                      |       |
+| YedekT            | Decimal                       |       |
+| YedekTD           | Decimal                       |       |
+| AsilMi            | Bool                          |       |
+| AsilVergiNumarasi | String                        |       |
+| AsilAdi           | String                        |       |
+| SeriNo            | String                        |       |
+| KesideIlID        | Integer                       |       |
+| SonDurumID        | CekSenetSonDurumlari          |       |
+| MuhasebeBorcID    | Integer                       |       |
+| MuhasebeAlacakID  | Integer                       |       |
+| Aciklama          | String                        |       |
+| DevirSonDurumID   | Nullable CekSenetSonDurumlari |       |
+| CariID            | Nullable Integer              |       |
+| BankaSubeID       | Nullable Integer              |       |
+| ProjeID           | Nullable Integer              |       |
+| PlasiyerID        | Nullable Integer              |       |
+| SozlesmeID        | Nullable Integer              |       |
+| PlasiyerID        | Nullable Integer              |       |
+| YeriCariID        | Nullable Integer              |       |
+| YeriBankaHesapID  | Nullable Integer              |       |
+
+```Json
+{
+    "KalemTipi": "CekSenet",
+    "DekontID": 190324,
+    "KartID": "3658",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "CekSenet" : {
+     "CekSenetID": 1,
+     "SubeID": 1,
+     "SirketID": 1,
+     "TipID": 1,
+     "Tutar": 100,
+     "DovizID": 1,
+     "TutarDvz": 0,
+     "Tarih": "2021.09.23",
+     "Vade": "2021.09.23",
+     "YedekT": 1,
+     "YedekD": 1,
+     "AsilMi": false,
+     "AsilVergiNumarasi": "",
+     "AsilAdi": "",
+     "SeriNo": "",
+     "KesideIlID": 1,
+     "SonDurumID": 1,
+     "MuhasebeBorcID": 1,
+     "MuhasebeAlacakID": 1,
+     "Aciklama": "",
+    }
+}
+```
+
+#### SiparisCariKalem
+
+| Parametre               | Değer            | Tanım                                                                                       |
+| ----------------------- | ---------------- | ------------------------------------------------------------------------------------------- |
+| CariAdresID             | Nullable Integer | Cari'ye ait adres blgisini tutan Adres kartının ID'sidir.Sevk adresindeki bilgiler içindir. |
+| CariDetayID             | Nullable Integer | Alt carilere bağlamak için.                                                                 |
+| CariBankaID             | Nullable Integer | Havale vs gibi işlemler için.                                                               |
+| BeklenenTahsilatOdemeID | Nullable Integer |                                                                                             |
+| MuhtelifCariAdi         | string           |                                                                                             |
+| MuhtelifVergiNo         | string           |                                                                                             |
+| MuhtelifVergiDairesi    | string           |                                                                                             |
+| MuhtelifAdres           | string           |                                                                                             |
+| MuhtelifTel             | string           |                                                                                             |
+| BABSTutar               | Decimal          |                                                                                             |
+
+```Json
+{
+    "KalemTipi": "SiparisCari",
+    "DekontID": 190324,
+    "KartID": "4920",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "SiparisCari" : {
+     "CariAdresID": 1,
+     "CariDetayID": null,
+     "CariBankaID":null,
+     "BeklenenTahsilatOdemeID":null,
+     "MuhtelifCariAdi":"",
+     "MuhtelifVergiNo":"",
+     "MuhtelifVergiDairesi":"",
+     "MuhtelifAdres":"",
+     "MuhtelifTel":"",
+     "BABSTutar:0
+    }
+}
+```
+
+#### SiparisStokKalem
+
+| Parametre                 | Değer                                 | Tanım |
+| ------------------------- | ------------------------------------- | ----- |
+| BrmFiyatN                 | Decimal                               |       |
+| BrmFiyatB                 | Decimal                               |       |
+| BrmFiyatTipi              | BirimFiyatTipleri                     |       |
+| DepoID                    | Integer                               |       |
+| IskontoTipi               | Bool                                  |       |
+| IskontoOrani              | Decimal                               |       |
+| VadeIskontoOrani          | Decimal                               |       |
+| KullaniciIskontoOrani     | Decimal                               |       |
+| TeslimTarihi              | DateTime                              |       |
+| Kapali                    | Bool                                  |       |
+| GelenEFaturaStokBilgileri | String                                |       |
+| VergiDetaylari            | List of StokHareketleriVergiDetaylari |       |
+| KullaniciIskontoOrani     | Decimal                               |       |
+| OtomatikKalem             | Nullable Bool                         |       |
+| KarmaKoliAdet             | Nullable Decimal                      |       |
+| VergiOran                 | Nullable Decimal                      |       |
+| VergiAltID                | Nullable Integer                      |       |
+| StokDetayID               | Nullable Integer                      |       |
+| CariID                    | Nullable Integer                      |       |
+| GelirGiderCariID          | Nullable Integer                      |       |
+| DemirbasID                | Nullable Integer                      |       |
+| GelirGiderDekontID        | Nullable Integer                      |       |
+| RafID                     | Nullable Integer                      |       |
+| PromosyonID               | Nullable Integer                      |       |
+| PaketID                   | Nullable Integer                      |       |
+| KarmaKoliID               | Nullable Integer                      |       |
+| IrsaliyeID                | Nullable Integer                      |       |
+| YuklemeID                 | Nullable Integer                      |       |
+| NakliyeID                 | Nullable Integer                      |       |
+| TeklifHareketID           | Nullable Integer                      |       |
+| DepoKabulID               | Nullable Integer                      |       |
+| IsEmriID                  | Nullable Integer                      |       |
+| DepoKabulID               | Nullable Integer                      |       |
+| KarsilamaSekli            | Nullable Integer                      |       |
+| IthalatIhracatID          | Nullable Integer                      |       |
+| UstHareketID              | Nullable Integer                      |       |
+
+```Json
+{
+    "KalemTipi": "SiparisStok",
+    "DekontID": 190324,
+    "KartID": "3658",
+    "Miktar": 1,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "SiparisStok" : {
+     "BrmFiyatN": 1,
+     "BrmFiyatB": 21.12,
+     "BrmFiyatTipi":12.21,
+     "DepoID":1,
+     "IskontoOrani":0,
+     "VadeIskontoOrani":0,
+     "KullaniciIskontoOrani":0,
+     "GelenEFaturaStokBilgileri":0,
+     "TeslimTarihi": "2021.09.23",
+     "Kapali": false,
+     "VergiDetaylari":[
+                        {
+                        ...
+                        },
+                        {
+                        ...
+                        }
+                    ],
+    }
+}
+```
+
+#### StokHareketleriVergiDetaylari
+
+| Parametre       | Değer            | Tanım   |
+| --------------- | ---------------- | ------- |
+| VergiDetayID    | Integer          |         |
+| StokHareketID   | Integer          |         |
+| VergiID         | Integer          |         |
+| VergiAltID      | Nullable Integer |         |
+| VergiMuafiyetID | Nullable Integer |         |
+| Oran            | Decimal          |         |
+| Tutar           | Decimal          |         |
+| DovizID         | Integer          |         |
+| TutarDvz        | Decimal          |         |
+| Matrah          | Decimal          |         |
+| MatrahDvz       | Decimal          |         |
+| BA              | String           | Zorunlu |
+
+```Json
+{
+    "VergiDetayID": 1,
+    "StokHareketID": 1,
+    "VergiID": 1,
+    "VergiAltID": null,
+    "VergiMuafiyetID": null,
+    "Oran": 18,
+    "Tutar": 50,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "Matrah": 0,
+    "MatrahDvz": 0,
+    "BA": "B",
+}
+```
+
+## Dekont Kaydetme Süreci (Tek-Tek)
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=1"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190327,
+    "Tarih": "2021-09-23T05:10:23.75Z",
+    "BelgeNo": "1129529508609-DK",
+    "RefBelgeNo": "1129529508609-DK",
+    "Vade": "2021-09-23T05:10:23.75Z",
+    "Tutar": 100.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": true,
+    "Aciklama": "Nakit Tahsilat TL Kasa",
+    "OnayDurum": 1,
+    "OlsTar": "2021-09-23T14:18:21.9577521+03:00",
+    "DgsTar": "2021-09-23T14:18:22.5217204+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 5003,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra düzenle metodunu çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+| KalemCok  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+<aside class="success">
+Dekont(Tek-Tek) oluştururken Nakit Tahsilat örnek senaryo üzerinden gidebilirsiniz.
+</aside>
+
+## Dekont Kaydetme Süreci (Tek-Cok)
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Baslik": BaslikModel,
+        "KalemTek": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=1"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190328,
+    "Tarih": "2021-09-23T05:10:23.75Z",
+    "BelgeNo": "1129529508609-DK",
+    "RefBelgeNo": "1129529508609-DK",
+    "Vade": "2021-09-23T05:10:23.75Z",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "2021-09-23T14:34:36.0746084+03:00",
+    "DgsTar": "2021-09-23T14:34:36.0746084+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 10005,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Yeni bir dekont(tek-cok) eklemek KayitTipi "Ekle" parametresi ile çağrılır. RequestBody içerisinde Başlık Bilgisi ve KalemTek Bilgisi gönderilir. Bu method başarılı olduktan sonra KalemCok bilgisi Kalem Methodu ile gönderilir. çağrılır.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+<aside class="info">
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra KayitTipi URL parametresini "Duzenle" yaparak aynı metodu tekrar çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+</aside>
+<aside class="success">
+Dekont (Tek-Cok) eklerken Alınan Sipariş örneği üzerinden gidebilirsiniz.
+</aside>
+
+## Dekont Kaydetme Süreci Kalem Metodu
+
+Var olan Dekont'a kalem eklemek için bu metod çağrılır. RequestBody içerisinde KalemModel'i gönderirken "KalemCok" ismi yerine "Kalem" ismini kullanınız.
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Kalem": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Kalem": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Kalem": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=1"
+
+payload="{
+        "Kalem": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Kalem\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 2,
+    "Cari": null,
+    "Stok": {
+      "BrmFiyatN": 50.0,
+      "BrmFiyatB": 10.4,
+      "BrmFiyatTipi": 1,
+      "VergiAltID": null,
+      "VergiOran": null,
+      "StokDetayID": null,
+      "DepoID": 1,
+      "CariID": 4920,
+      "GelirGiderCariID": null,
+      "DemirbasID": null,
+      "GelirGiderDekontID": null,
+      "OtomatikKalem": null,
+      "RafID": null,
+      "PromosyonID": null,
+      "PaketID": null,
+      "KarmaKoliID": null,
+      "KarmaKoliAdet": null,
+      "IrsaliyeID": null,
+      "YuklemeID": null,
+      "NakliyeID": null,
+      "SiparisHareketID": null,
+      "DepoKabulID": null,
+      "IskontoTipi": true,
+      "IskontoOrani": 0.0,
+      "VadeIskontoOrani": 9.426919,
+      "KullaniciIskontoOrani": 16.0,
+      "TransferHareketID": null,
+      "IthalatIhracatID": null,
+      "UstHareketID": null,
+      "GelenEFaturaStokBilgileri": null,
+      "VergiDetaylari": [
+        {
+          "__TabloID": 3019,
+          "__ProgramID": 3009,
+          "VergiDetayID": 253179,
+          "StokHareketID": 804211,
+          "VergiID": 1,
+          "VergiAltID": null,
+          "VergiMuafiyetID": null,
+          "Oran": 18.0,
+          "Tutar": 9.0,
+          "TutarDvz": 0.0,
+          "Matrah": 50.0,
+          "MatrahDvz": 0.0,
+          "BA": "A",
+          "DovizID": 1,
+          "StokHareket": null,
+          "Vergi": null,
+          "VergiAlt": null,
+          "VergiMuafiyet": null,
+          "Doviz": null
+        }
+      ]
+    },
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": null,
+    "SiparisStok": null,
+    "HareketID": 804211,
+    "DekontID": 190328,
+    "SubeID": 1,
+    "SirketID": 1,
+    "TipID": 10005,
+    "YevmiyeFisHareketID": null,
+    "KartID": 3658,
+    "Tarih": "2021-09-23T05:10:23.75",
+    "Vade": "2021-09-23T05:10:23.75",
+    "BA": "A",
+    "Tutar": 50.0,
+    "Miktar": 1.0,
+    "DovizID": 1,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": false,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 0,
+    "OlsID": 2,
+    "OlsTar": "2021-09-23T14:38:42.7905702+03:00",
+    "DgsID": 2,
+    "DgsTar": "2021-09-23T14:38:42.7905702+03:00",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": "Profil Seren Ahşap Ladin   3.0X4.3X300cm"
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Yeni bir dekont(tek-cok) eklemek KayitTipi "Ekle" parametresi ile çağrılır. RequestBody içerisinde Başlık Bilgisi ve KalemTek Bilgisi gönderilir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=1`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer      | Tanım                                                    | Zorunlu |
+| --------- | ---------- | -------------------------------------------------------- | ------- |
+| Kalem     | KalemModel | KalemCokModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+<aside class="success">
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra KayitTipi URL parametresini "Duzenle" yaparak aynı metodu tekrar çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+</aside>
+
+## Dekont Düzenle (Tek-Tek)
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=2"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190327,
+    "Tarih": "2021-09-23T05:10:23.75Z",
+    "BelgeNo": "1129529508609-DK",
+    "RefBelgeNo": "1129529508609-DK",
+    "Vade": "2021-09-23T05:10:23.75Z",
+    "Tutar": 100.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": true,
+    "Aciklama": "Nakit Tahsilat TL Kasa",
+    "OnayDurum": 1,
+    "OlsTar": "2021-09-23T14:18:21.9577521+03:00",
+    "DgsTar": "2021-09-23T14:18:22.5217204+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 5003,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra düzenle metodunu çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                      |
+| --------- | ------- | ------------------------------------------ |
+| KayitTipi | Integer | 2 Tüm API'de düzenle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+| KalemCok  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+<aside class="success">
+Dekont(Tek-Tek) düzenlerken örnek senaryo üzerinden gidebilirsiniz.
+</aside>
+
+## Dekont Düzenle (Tek-Cok)
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Baslik": BaslikModel,
+        "KalemTek": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/BankaHesap/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kasa/post?KayitTipi=2"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190328,
+    "Tarih": "2021-09-23T05:10:23.75Z",
+    "BelgeNo": "1129529508609-DK",
+    "RefBelgeNo": "1129529508609-DK",
+    "Vade": "2021-09-23T05:10:23.75Z",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "2021-09-23T14:34:36.0746084+03:00",
+    "DgsTar": "2021-09-23T14:34:36.0746084+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 10005,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Yeni bir dekont(tek-cok) eklemek için KayitTipi "Ekle" parametresi ile çağrılır. RequestBody içerisinde Başlık Bilgisi ve KalemTek Bilgisi gönderilir. Bu method başarılı olduktan sonra KalemCok bilgisi Kalem Methodu ile gönderilir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 2 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+<aside class="success">
+Dekont (Tek-Cok) düzenlerken Alınan Sipariş örneği üzerinden gidebilirsiniz.
+</aside>
+
+## Dekont Düzenle Kalem Metodu
+
+Var olan Dekont'a kalem eklemek için bu metod çağrılır. RequestBody içerisinde KalemModel'i gönderirken "KalemCok" ismi yerine "Kalem" ismini kullanınız.
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Kalem": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Kalem": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Kalem": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=2"
+
+payload="{
+        "Kalem": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Kalem\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 2,
+    "Cari": null,
+    "Stok": {
+      "BrmFiyatN": 50.0,
+      "BrmFiyatB": 10.4,
+      "BrmFiyatTipi": 1,
+      "VergiAltID": null,
+      "VergiOran": null,
+      "StokDetayID": null,
+      "DepoID": 1,
+      "CariID": 4920,
+      "GelirGiderCariID": null,
+      "DemirbasID": null,
+      "GelirGiderDekontID": null,
+      "OtomatikKalem": null,
+      "RafID": null,
+      "PromosyonID": null,
+      "PaketID": null,
+      "KarmaKoliID": null,
+      "KarmaKoliAdet": null,
+      "IrsaliyeID": null,
+      "YuklemeID": null,
+      "NakliyeID": null,
+      "SiparisHareketID": null,
+      "DepoKabulID": null,
+      "IskontoTipi": true,
+      "IskontoOrani": 0.0,
+      "VadeIskontoOrani": 9.426919,
+      "KullaniciIskontoOrani": 16.0,
+      "TransferHareketID": null,
+      "IthalatIhracatID": null,
+      "UstHareketID": null,
+      "GelenEFaturaStokBilgileri": null,
+      "VergiDetaylari": [
+        {
+          "__TabloID": 3019,
+          "__ProgramID": 3009,
+          "VergiDetayID": 253179,
+          "StokHareketID": 804211,
+          "VergiID": 1,
+          "VergiAltID": null,
+          "VergiMuafiyetID": null,
+          "Oran": 18.0,
+          "Tutar": 9.0,
+          "TutarDvz": 0.0,
+          "Matrah": 50.0,
+          "MatrahDvz": 0.0,
+          "BA": "A",
+          "DovizID": 1,
+          "StokHareket": null,
+          "Vergi": null,
+          "VergiAlt": null,
+          "VergiMuafiyet": null,
+          "Doviz": null
+        }
+      ]
+    },
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": null,
+    "SiparisStok": null,
+    "HareketID": 804211,
+    "DekontID": 190328,
+    "SubeID": 1,
+    "SirketID": 1,
+    "TipID": 10005,
+    "YevmiyeFisHareketID": null,
+    "KartID": 3658,
+    "Tarih": "2021-09-23T05:10:23.75",
+    "Vade": "2021-09-23T05:10:23.75",
+    "BA": "A",
+    "Tutar": 50.0,
+    "Miktar": 1.0,
+    "DovizID": 1,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": false,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 0,
+    "OlsID": 2,
+    "OlsTar": "2021-09-23T14:38:42.7905702+03:00",
+    "DgsID": 2,
+    "DgsTar": "2021-09-23T14:38:42.7905702+03:00",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": "Profil Seren Ahşap Ladin   3.0X4.3X300cm"
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Yeni bir dekont(tek-cok) eklemek KayitTipi "Ekle" parametresi ile çağrılır. RequestBody içerisinde Başlık Bilgisi ve KalemTek Bilgisi gönderilir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=2`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 2 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+### Sorgu Body JSON açıklaması
+
+| Parametre | Değer      | Tanım                                                    | Zorunlu |
+| --------- | ---------- | -------------------------------------------------------- | ------- |
+| Kalem     | KalemModel | KalemCokModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+## Dekont Baslik Sil
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Baslik": {
+        "DekontID" : 190329
+    }
+}'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+    "Baslik": {
+        "DekontID" : 190329
+    }
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=-1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=-1"
+
+payload="{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 0,
+    "Tarih": "0001-01-01T00:00:00",
+    "BelgeNo": null,
+    "RefBelgeNo": null,
+    "Vade": "0001-01-01T00:00:00",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 0,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "0001-01-01T00:00:00",
+    "DgsTar": "0001-01-01T00:00:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 0,
+    "SirketID": 0,
+    "Sube2ID": null,
+    "TipID": 0,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 0,
+    "DgsID": 0,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont silmek içindir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                                  |
+| --------- | ------- | ------------------------------------------------------ |
+| KayitTipi | Integer | -1 KayitTipi=-1 bütün API'de sil anlamına gelmektedir. |
+
+### Sorgu Body Parametreleri
+
+| Parametre | Değer       | Tanım                                                       |
+| --------- | ----------- | ----------------------------------------------------------- |
+| Baslik    | BaslikModel | BaslikModel içinde sadece DekontID'yi göndermek yeterlidir. |
+
+## Dekont Kalem Sil
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    	"Kalem": {
+        "KalemTipi": "Stok",
+        "DekontID": "{{dekontID}}",
+        "HareketID": 804227
+    }
+}'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+    "Baslik": {
+        "DekontID" : 190329
+    }
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=-1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=-1"
+
+payload="{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{
+"Baslik": {
+        "DekontID" : 190329
+    }
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 0,
+    "Tarih": "0001-01-01T00:00:00",
+    "BelgeNo": null,
+    "RefBelgeNo": null,
+    "Vade": "0001-01-01T00:00:00",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 0,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "0001-01-01T00:00:00",
+    "DgsTar": "0001-01-01T00:00:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 0,
+    "SirketID": 0,
+    "Sube2ID": null,
+    "TipID": 0,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 0,
+    "DgsID": 0,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont silmek içindir.
+
+### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=-1`
+
+### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                                  |
+| --------- | ------- | ------------------------------------------------------ |
+| KayitTipi | Integer | -1 KayitTipi=-1 bütün API'de sil anlamına gelmektedir. |
+
+### Sorgu Body Parametreleri
+
+## Nakit Tahsilat Oluşturma-Düzenleme-Silme (Tek-Tek)
+
+Bu başık altında Nakit Tahsilat hareketinin kaydetme, düzeltme ve silme süreçlerini göreceksiniz. Bunun için öncelikle BaslikModel, KalemTekModel ve KalemCokModel yapılarımızı oluşturalım.
+
+### Nakit Tahsilat Kaydetme
+
+Bu başık altında Nakit Tahsilat hareketinin kaydetme sürecini göreceksiniz. Bunun için öncelikle BaslikModel, KalemTekModel ve KalemCokModel yapılarımızı oluşturalım.
+
+#### BaslikModel
+
+Farklı bir Dekont(Tek-Tek) kaydı oluşturmak istediğinzde örneğin Nakit Ödeme hareketi oluşturmak istediğinizde, BaslikModel'in içinde yer alan TipID parametresini "NakitOdeme" olarak değiştirmeniz yeterli olacaktır.
+
+| Parametre | Tip                | Değer                        | Tanım                                                                               | Zorunlu |
+| --------- | ------------------ | ---------------------------- | ----------------------------------------------------------------------------------- | ------- |
+| TipID     | HareketTurleriEnum | NakitTahsilat                | Dekontun hareket türünü belirler.                                                   | Evet    |
+| SirketID  | Integer            | 1                            | Hareketin hangi şirkete açılacağını belirler                                        | Evet    |
+| SubeID    | Integer            | 1                            | Hareketin hangi şubeye açılacağını belirler                                         | Evet    |
+| BelgeNo   | String             | 2822429117384-NT             | Dekontun belge numarasıdır. Uniqe olmak zorundadır.                                 | Evet    |
+| Tarih     | DateTime           | 24.09.2021                   | Dekont tarihidir.                                                                   | Evet    |
+| Vade      | DateTime           | 24.09.2021                   | Deokntun vadesidir. Verilmediği takdirde dekontun tarihi ile aynı değeri alacaktır. | Hayır   |
+| Aciklama  | String             | Nakit Tahsilat Başlık Modeli | Dekont'un başlığına ait açıklamadır.                                                | Hayır   |
+
+```Json
+"Baslik": {
+    "TipID": "NakitTahsilat",
+    "SirketID": 1,
+    "SubeID": 1,
+    "BelgeNo": "2822429117384-NT",
+    "Tarih": "24.09.2021",
+    "Vade": "24.09.2021",
+    "Aciklama": "Nakit Tahsilat Başlık Modeli",
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont Başlığı oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz BaslikModel'ine bakabilirsiniz.
+</aside>
+
+#### KalemTekModel
+
+| Parametre | Tip          | Değer | Tanım                                                                                                                                                      | Zorunlu |
+| --------- | ------------ | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| KalemTipi | KalemTipleri | Kasa  | Nakit Tahsilat hareketi Kasa üzerinden yapıldığı için KalemTek bilgisinin KalemTipi parametresi Kasa olmalıdır.                                            | Evet    |
+| KartID    | Integer      | 1     | Aaro'da tanımlamış olduğunuz kasa kartının ID'sidir.                                                                                                       | Evet    |
+| Tutar     | Decimal      | 1     | Hareketin toplam tutarının TL cinsinden karşılığıdır. 0 girilemez. KalemCok bilgisindeki değer ile aynı olmalıdır.                                         | Evet    |
+| DovizID   | Integer      | 1     | DovizID hareketin döviz cinsini belirler. KalemCok bilgisindeki değer ile aynı olmalıdır.                                                                  | Evet    |
+| TutarDvz  | Decimal      | 0     | Hareketin tutarının belirtilen döviz cinsinden karşılığıdır. Döviz cinsi TL(1)'den farklı ise 0 girilemez. KalemCok bilgisindeki değer ile aynı olmalıdır. | Evet    |
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Kasa",
+        "KartID" : 1,
+        "Tutar" : 100,
+        "DovizID":  1,
+        "TutarDvz":0
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont KalemTek oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz KalemModel'ine bakabilirsiniz.
+</aside>
+
+#### KalemCokModel
+
+| Parametre | Tip          | Değer | Tanım                                                                                                                                                      | Zorunlu |
+| --------- | ------------ | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| KalemTipi | KalemTipleri | Cari  | Nakit Tahsilat hareketinin diğer tarafı Cari olduğu için KalemTek bilgisinin KalemTipi parametresi Cari olmalıdır.                                         | Evet    |
+| KartID    | Integer      | 4920  | Aaro'da tanımlamış olduğunuz cari kartının ID'sidir.                                                                                                       | Evet    |
+| Tutar     | Decimal      | 100   | Hareketin toplam tutarının TL cinsinden karşılığıdır. 0 girilemez. KalemTek bilgisindeki değer ile aynı olmalıdır.                                         | Evet    |
+| DovizID   | Integer      | 1     | DovizID hareketin döviz cinsini belirler. KalemTek bilgisindeki değer ile aynı olmalıdır.                                                                  | Evet    |
+| TutarDvz  | Decimal      | 0     | Hareketin tutarının belirtilen döviz cinsinden karşılığıdır. Döviz cinsi TL(1)'den farklı ise 0 girilemez. KalemTek bilgisindeki değer ile aynı olmalıdır. | Evet    |
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Cari",
+        "KartID" : 4920,
+        "Tutar" : 100,
+        "DovizID":  1,
+        "TutarDvz":0
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont KalemCok oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz KalemModel'ine bakabilirsiniz.
+</aside>
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=1"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190338,
+    "Tarih": "2021-09-24T05:34:24.462Z",
+    "BelgeNo": "2822429117384-NT",
+    "RefBelgeNo": "2822429117384-NT",
+    "Vade": "2021-09-24T05:34:24.462Z",
+    "Tutar": 100.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": true,
+    "Aciklama": "Nakit Tahsilat TL Kasa",
+    "OnayDurum": 1,
+    "OlsTar": "2021-09-24T09:01:45.1996952+03:00",
+    "DgsTar": "2021-09-24T09:01:45.4761338+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 5003,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra düzenle metodunu çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+| KalemCok  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+<aside class="success">
+Dekont(Tek-Tek) oluştururken Nakit Tahsilat örnek senaryo üzerinden gidebilirsiniz.
+</aside>
+
+### Nakit Tahsilat Düzenleme
+
+BaşlıkModel içerisinde DekontID bilgisini set ettikten sonra düzeltme yapabiliriz.
+
+#### BaslikModel
+
+```Json
+"Baslik": {
+    "DekontID": 190338,
+    "TipID": "NakitTahsilat",
+    "SirketID": 1,
+    "SubeID": 1,
+    "BelgeNo": "2822429117384-NT",
+    "Tarih": "24.09.2021",
+    "Vade": "24.09.2021",
+}
+```
+
+#### KalemTekModel
+
+KalemTek Model deki tutar bilgisini yenileyelim
+KalemTek icindeki aciklama alanini değiştirelim. Bu alan Dekontun açıklamasıdır.
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Kasa",
+        "KartID" : 1,
+        "Tutar" : 200,
+        "DovizID":  1,
+        "TutarDvz":0,
+        "Aciklama": "Nakit Tahsilat Başlık Modeli Düzenleme",
+}
+```
+
+#### KalemCokModel
+
+KalemCok Model deki tutar bilgisini yenileyelim
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Cari",
+        "KartID" : 4920,
+        "Tutar" : 200,
+        "DovizID":  1,
+        "TutarDvz":0
+}
+```
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=2"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190338,
+    "Tarih": "2021-09-24T05:34:24.462Z",
+    "BelgeNo": "2822429117384-NT",
+    "RefBelgeNo": "2822429117384-NT",
+    "Vade": "2021-09-24T05:34:24.462Z",
+    "Tutar": 100.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": true,
+    "Aciklama": "Nakit Tahsilat Başlık Modeli Düzenleme",
+    "OnayDurum": 1,
+    "OlsTar": "2021-09-24T09:01:45.1996952+03:00",
+    "DgsTar": "2021-09-24T09:01:45.4761338+03:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 5003,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Dekont eklendikten sonra oluşan Dekontun ID sini Baslik Modelin'de set ettikten sonra düzenle metodunu çağırınız. Böylelikle ilk eklemeden sonra Durumu false olan kalemlerin Durumu true olarak kaydedilir. Aksi takdirde dekont tamamlanmamış olur.
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                            |
+| --------- | ------- | ------------------------------------------------ |
+| KayitTipi | Integer | 2 Tüm API'de kayıt düzenle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+| KalemCok  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+### Nakit Tahsilat Silme
+
+BaşlıkModel içerisinde sadece DekontID bilgisini set etmemiz yeterli olacaktır.
+
+#### BaslikModel
+
+```Json
+"Baslik": {
+    "DekontID": 190338
+}
+```
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=-1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=-1"
+
+payload="{
+        "Baslik": "BaslikModel",
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 0,
+    "Tarih": "0001-01-01T00:00:00",
+    "BelgeNo": null,
+    "RefBelgeNo": null,
+    "Vade": "0001-01-01T00:00:00",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 0,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "0001-01-01T00:00:00",
+    "DgsTar": "0001-01-01T00:00:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 0,
+    "SirketID": 0,
+    "Sube2ID": null,
+    "TipID": 0,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 0,
+    "DgsID": 0,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                         |
+| --------- | ------- | --------------------------------------------- |
+| KayitTipi | Integer | -1 Tüm API'de kayıt sil anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+## Alınan Sipariş Oluşturma-Düzenleme-Silme (Tek-Cok)
+
+### Alınan Sipariş Başlık Kaydetme
+
+Bu başık altında Alınan Sipariş hareketinin kaydetme sürecini göreceksiniz. (Tek-Cok) hareketlerinde önce BaslikModel ve KalemTekModel bilgileri ile Başlık kaydedilir. Bu işlem başarılı olduktan sonra KalemCok bilgisi "Kalem" metoduyla beraber kaydedilir.
+
+#### BaslikModel
+
+Farklı bir Dekont(Tek-Cok) kaydı oluşturmak istediğinzde örneğin Verilen Sipariş hareketi oluşturmak istediğinizde, BaslikModel'in içinde yer alan TipID parametresini "VerilenSiparis" olarak değiştirmeniz yeterli olacaktır.
+
+| Parametre | Tip                | Değer                               | Tanım                                                                               | Zorunlu |
+| --------- | ------------------ | ----------------------------------- | ----------------------------------------------------------------------------------- | ------- |
+| TipID     | HareketTurleriEnum | AlinanSiparis                       | Dekontun hareket türünü belirler.                                                   | Evet    |
+| SirketID  | Integer            | 1                                   | Hareketin hangi şirkete açılacağını belirler                                        | Evet    |
+| SubeID    | Integer            | 1                                   | Hareketin hangi şubeye açılacağını belirler                                         | Evet    |
+| BelgeNo   | String             | 2822429117384-AS                    | Dekontun belge numarasıdır. Uniqe olmak zorundadır.                                 | Evet    |
+| Tarih     | DateTime           | 24.09.2021                          | Dekont tarihidir.                                                                   | Evet    |
+| Vade      | DateTime           | 24.09.2021                          | Deokntun vadesidir. Verilmediği takdirde dekontun tarihi ile aynı değeri alacaktır. | Hayır   |
+| Aciklama  | String             | Alınan Sipariş Başlık Modeli Ekleme | Dekont'un başlığına ait açıklamadır.                                                | Hayır   |
+
+```Json
+"Baslik": {
+    "TipID": "AlinanSiparis",
+    "SirketID": 1,
+    "SubeID": 1,
+    "BelgeNo": "4655889712369-AS",
+    "Tarih": "24.09.2021",
+    "Vade": "24.09.2021",
+    "Aciklama": "Alınan Sipariş Başlık Modeli Ekleme",
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont Başlığı oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz BaslikModel'ine bakabilirsiniz.
+</aside>
+
+#### KalemTekModel
+
+| Parametre | Tip          | Değer | Tanım                                                                                                           | Zorunlu |
+| --------- | ------------ | ----- | --------------------------------------------------------------------------------------------------------------- | ------- |
+| KalemTipi | KalemTipleri | Cari  | Alınan Sipariş hareketi Cari üzerinden yapıldığı için KalemTek bilgisinin KalemTipi parametresi Cari olmalıdır. | Evet    |
+| KartID    | Integer      | 4920  | Aaro'da tanımlamış olduğunuz cari kartının ID'sidir.                                                            | Evet    |
+| Tutar     | Decimal      | 100   | Hareketin toplam tutarının TL cinsinden karşılığıdır. 0 girilemez.                                              | Evet    |
+| DovizID   | Integer      | 1     | DovizID hareketin döviz cinsini belirler.                                                                       | Evet    |
+| TutarDvz  | Decimal      | 0     | Hareketin tutarının belirtilen döviz cinsinden karşılığıdır. Döviz cinsi TL(1)'den farklı ise 0 girilemez.      | Evet    |
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Cari",
+        "KartID" : 4920,
+        "Tutar" : 100,
+        "DovizID":  1,
+        "TutarDvz":0
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont KalemTek oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz KalemModel'ine bakabilirsiniz.
+</aside>
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=1"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "Model": {
+        "DekontID": 190339,
+        "Tarih": "2021-09-24T07:57:24.035Z",
+        "BelgeNo": "4655889712369-AS",
+        "RefBelgeNo": "4655889712369-AS",
+        "Vade": "2021-09-24T07:57:24.035Z",
+        "Tutar": 0.0,
+        "YedekT": 0.0,
+        "Seviye": 255,
+        "Durum": false,
+        "Aciklama": null,
+        "OnayDurum": 0,
+        "OlsTar": "2021-09-24T11:01:53.0072954+03:00",
+        "DgsTar": "2021-09-24T11:01:53.0072954+03:00",
+        "YedekN1": null,
+        "YedekN2": null,
+        "YedekN3": null,
+        "YedekC1": null,
+        "YedekC2": null,
+        "YedekC3": null,
+        "YedekI1": null,
+        "YedekI2": null,
+        "YedekI3": null,
+        "RefTeslimTarihi": null,
+        "Kapali": false,
+        "eFatura": false,
+        "eFaturaUUID": null,
+        "eFaturaProfilID": null,
+        "eFaturaTipID": null,
+        "eFaturaDurumID": null,
+        "eFaturaTurID": null,
+        "eArsivInternetSatisSablon": null,
+        "MagazaSiparisID": null,
+        "Etiket1ID": null,
+        "Etiket2ID": null,
+        "Etiket3ID": null,
+        "Etiket4ID": null,
+        "Etiket5ID": null,
+        "KopyaKaynakID": null,
+        "SubeID": 1,
+        "SirketID": 1,
+        "Sube2ID": null,
+        "TipID": 10013,
+        "TipAltID": null,
+        "AciklamalarID": null,
+        "OlsID": 2,
+        "DgsID": 2,
+        "RefSozlesmeID": null,
+        "RefDepoID": null,
+        "RefKDVDahil": null,
+        "RefProjeID": null,
+        "RefPlasiyerID": null,
+        "RefDepo2ID": null,
+        "RefIthalatIhracatID": null,
+        "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu işlem başarılı olduktan sonra KalemCok bilgisini eklemek için Kalem metodunu kullanacaz
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Evet    |
+
+### Alınan Sipariş Kalem Kaydetme
+
+Başlık kaydetme işlemi başarılı olduktan sonra KalemCok bilgisi "Kalem" metoduyla beraber kaydedilir. Birden çok kalem kaydetmek istiyorsanız her kalem için bu metodu çağırmalısınız
+
+#### KalemCokModel
+
+| Parametre   | Tip              | Değer            | Tanım                                                                                                    | Zorunlu |
+| ----------- | ---------------- | ---------------- | -------------------------------------------------------------------------------------------------------- | ------- |
+| KalemTipi   | KalemTipleri     | SiparisStok      | Alınan Sipariş hareketinde kalemleri ekleyebilmek için KalemTipi parametresi SiparisStok olmalıdır.      | Evet    |
+| DekontID    | Integer          | 190339           | Baslik metodunu kullanarak kaydettiğimiz dekontun ID'sidir.                                              | Evet    |
+| KartID      | Integer          | 3658             | Aaro'da tanımlamış olduğunuz stok kartının ID'sidir.                                                     | Evet    |
+| Miktar      | Decimal          | 1                | Eklemek istediğiniz stoğun kendi birimi cinsinden miktarını belirtir.                                    | Evet    |
+| Tutar       | Decimal          | 150              | Kalemin toplam tutarının TL cinsinden karşılığıdır. 0 girilemez.                                         | Evet    |
+| DovizID     | Integer          | 1                | DovizID hareketin döviz cinsini belirler.                                                                | Evet    |
+| TutarDvz    | Decimal          | 0                | Kalemin tutarının belirtilen döviz cinsinden karşılığıdır. Döviz cinsi TL(1)'den farklı ise 0 girilemez. | Evet    |
+| SiparisStok | SiparisStokModel | SiparisStokModel | Dökümanda yer alan SiparisStokModel bilgileriyle oluşturulan model                                       | Evet    |
+
+```Json
+"KalemCok": {
+    "KalemTipi": "SiparisStok",
+    "DekontID": 190339,
+    "KartID": "3658",
+    "Miktar": 1,
+    "Tutar": 150,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "SiparisStok": {
+        "DepoID" : 1,
+        "TeslimTarihi" : "24.09.2021",
+        "VergiDetaylari": [
+            {
+                "VergiID": 1,
+                "Oran": 18,
+                "Tutar": 9,
+                "TutarDvz": 0,
+                "DovizID": 1,
+                "Matrah": 50,
+                "MatrahDvz": 0,
+                "BA": "B"
+            }
+        ]
+    }
+}
+```
+
+<aside class="info">
+Yukarıdaki bilgiler Dekont KalemCok oluşturmak için gereken asgari bilgilerdir. Daha fazla parametre göndermek isterseniz KalemModel'ine bakabilirsiniz.
+</aside>
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=1"
+
+payload="{
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 7,
+    "Cari": null,
+    "Stok": null,
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": null,
+    "SiparisStok": {
+      "BrmFiyatN": 150.0,
+      "BrmFiyatB": 10.4,
+      "BrmFiyatTipi": 1,
+      "VergiAltID": null,
+      "VergiOran": null,
+      "StokDetayID": null,
+      "DepoID": 1,
+      "CariID": 4920,
+      "GelirGiderCariID": null,
+      "DemirbasID": null,
+      "GelirGiderDekontID": null,
+      "OtomatikKalem": null,
+      "RafID": null,
+      "PromosyonID": null,
+      "PaketID": null,
+      "KarmaKoliID": null,
+      "KarmaKoliAdet": null,
+      "IrsaliyeID": null,
+      "YuklemeID": null,
+      "NakliyeID": null,
+      "TeklifHareketID": null,
+      "DepoKabulID": null,
+      "IskontoTipi": true,
+      "IskontoOrani": 0.0,
+      "VadeIskontoOrani": 9.426919,
+      "KullaniciIskontoOrani": 16.0,
+      "TeslimTarihi": "2021-09-24T07:57:24.035Z",
+      "Kapali": false,
+      "IsEmriID": null,
+      "KarsilamaSekli": null,
+      "IthalatIhracatID": null,
+      "UstHareketID": null,
+      "VergiDetaylari": [
+        {
+          "__TabloID": 3019,
+          "__ProgramID": 3009,
+          "VergiDetayID": 33260,
+          "StokHareketID": 28075,
+          "VergiID": 1,
+          "VergiAltID": null,
+          "VergiMuafiyetID": null,
+          "Oran": 18.0,
+          "Tutar": 27.0,
+          "TutarDvz": 0.0,
+          "Matrah": 150.0,
+          "MatrahDvz": 0.0,
+          "BA": "A",
+          "DovizID": 1,
+          "StokHareket": null,
+          "Vergi": null,
+          "VergiAlt": null,
+          "VergiMuafiyet": null,
+          "Doviz": null
+        }
+      ]
+    },
+    "HareketID": 28075,
+    "DekontID": 190339,
+    "SubeID": 1,
+    "SirketID": 1,
+    "TipID": 10013,
+    "YevmiyeFisHareketID": null,
+    "KartID": 3658,
+    "Tarih": "2021-09-24T07:57:24.037",
+    "Vade": "2021-09-24T07:57:24.037",
+    "BA": "A",
+    "Tutar": 150.0,
+    "Miktar": 1.0,
+    "DovizID": 1,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": false,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 0,
+    "OlsID": 2,
+    "OlsTar": "2021-09-24T11:24:29.3273835+03:00",
+    "DgsID": 2,
+    "DgsTar": "2021-09-24T11:24:29.3273835+03:00",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": "Profil Seren Ahşap Ladin   3.0X4.3X300cm"
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu işlem başarılı olduktan sonra KalemCok bilgisini eklemek için Kalemler metodunu kullanacaz
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                              |
+| --------- | ------- | -------------------------------------------------- |
+| KayitTipi | Integer | 1 Tüm API'de yeni kayıt ekle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer      | Tanım                                                 | Zorunlu |
+| --------- | ---------- | ----------------------------------------------------- | ------- |
+| KalemCok  | KalemModel | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+<aside class="success">
+KalemCok bilgisi eklendikten sonra Baslik düzenle metodu çağrılarak Başlık bilgisi yenilenmiş olur. Kalemleri ekleme işlemi tamamlandıktan sonra Baslik metodunu KayitTipi "Düzelt" yaparak çağrılmalıdır.
+</aside>
+
+### Alınan Sipariş Başlık Düzeltme
+
+Başlık bilgisinde DekontID'yi set ettikten sorna düzeltme işlemi yapabiliriz
+
+#### BaslikModel
+
+Başlık bilgisini düzeltirken KalemTek bilgisini göndermeniz zorunlu değildir.
+
+```Json
+"Baslik": {
+    "DekontID": 190339,
+    "TipID": "AlinanSiparis",
+    "SirketID": 1,
+    "SubeID": 1,
+    "BelgeNo": "4655889712369-AS",
+    "Tarih": "24.09.2021",
+    "Vade": "24.09.2021",
+    "Aciklama": "Alınan Sipariş Başlık Modeli Ekleme",
+}
+```
+
+#### KalemTekModel
+
+```Json
+"KalemTek": {
+        "KalemTipi" : "Cari",
+        "KartID" : 4920,
+        "Tutar" : 100,
+        "DovizID":  1,
+        "TutarDvz":0
+}
+```
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+        "KalemTek": KalemModel,
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=2"
+
+payload="{
+        "Baslik": "BaslikModel",
+        "KalemTek": "KalemModel",
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+        \"KalemTek\": \"KalemModel\",
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 190339,
+    "Tarih": "2021-09-24T07:57:24.035Z",
+    "BelgeNo": "4655889712369-AS",
+    "RefBelgeNo": "4655889712369-AS",
+    "Vade": "2021-09-24T07:57:24.035Z",
+    "Tutar": 177.0,
+    "YedekT": 0.0,
+    "Seviye": 255,
+    "Durum": true,
+    "Aciklama": "Alınan Sipariş Aaro Yazılım ve Makina AŞ",
+    "OnayDurum": 1,
+    "OlsTar": "2021-09-24T11:01:53.007",
+    "DgsTar": "2021-09-24T11:39:21.52",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 1,
+    "SirketID": 1,
+    "Sube2ID": null,
+    "TipID": 10013,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 2,
+    "DgsID": 2,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                                 |
+| --------- | ------- | ----------------------------------------------------- |
+| KayitTipi | Integer | 2 Tüm API'de yeni kayıt düzenle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+| KalemTek  | KalemModel  | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz.  | Hayır   |
+
+### Alınan Sipariş Kalem Düzeltme
+
+Kalem bilgisinin DekontID ve HareketID'si set edildikten sonra düzeltme işlemi yapabiliriz.
+Kalem bilgisinin miktarını değiştirip 3 yapalım. Miktar bilgisini güncellediğiniz zaman Tutar bilgisinin de güncellenmesini istiyorsanız, Tutar bigisini de girmeniz gerekmektedir.
+
+```Json
+"KalemCok": {
+    "KalemTipi": "SiparisStok",
+    "DekontID": 190339,
+    "HareketID": 28075,
+    "KartID": "3658",
+    "Miktar": 3,
+    "Tutar": 150,
+    "DovizID": 1,
+    "TutarDvz": 0,
+    "SiparisStok": {
+        "DepoID" : 1,
+        "TeslimTarihi" : "24.09.2021",
+        "VergiDetaylari": [
+            {
+                "VergiID": 1,
+                "Oran": 18,
+                "Tutar": 9,
+                "TutarDvz": 0,
+                "DovizID": 1,
+                "Matrah": 50,
+                "MatrahDvz": 0,
+                "BA": "B"
+            }
+        ]
+    }
+}
+```
+
+<aside class="info">
+Daha fazla parametre göndermek isterseniz KalemModel'ine bakabilirsiniz.
+</aside>
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=2`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=2' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=2",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=2");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=2"
+
+payload="{
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=2")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 7,
+    "Cari": null,
+    "Stok": null,
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": null,
+    "SiparisStok": {
+      "BrmFiyatN": 50.0,
+      "BrmFiyatB": 10.4,
+      "BrmFiyatTipi": 1,
+      "VergiAltID": null,
+      "VergiOran": null,
+      "StokDetayID": null,
+      "DepoID": 1,
+      "CariID": 4920,
+      "GelirGiderCariID": null,
+      "DemirbasID": null,
+      "GelirGiderDekontID": null,
+      "OtomatikKalem": null,
+      "RafID": null,
+      "PromosyonID": null,
+      "PaketID": null,
+      "KarmaKoliID": null,
+      "KarmaKoliAdet": null,
+      "IrsaliyeID": null,
+      "YuklemeID": null,
+      "NakliyeID": null,
+      "TeklifHareketID": null,
+      "DepoKabulID": null,
+      "IskontoTipi": true,
+      "IskontoOrani": 0.0,
+      "VadeIskontoOrani": 9.426919,
+      "KullaniciIskontoOrani": 16.0,
+      "TeslimTarihi": "2021-09-24T07:57:24.035Z",
+      "Kapali": false,
+      "IsEmriID": null,
+      "KarsilamaSekli": null,
+      "IthalatIhracatID": null,
+      "UstHareketID": null,
+      "VergiDetaylari": [
+        {
+          "__TabloID": 3019,
+          "__ProgramID": 3009,
+          "VergiDetayID": 33261,
+          "StokHareketID": 28075,
+          "VergiID": 1,
+          "VergiAltID": null,
+          "VergiMuafiyetID": null,
+          "Oran": 18.0,
+          "Tutar": 27.0,
+          "TutarDvz": 0.0,
+          "Matrah": 150.0,
+          "MatrahDvz": 0.0,
+          "BA": "A",
+          "DovizID": 1,
+          "StokHareket": null,
+          "Vergi": null,
+          "VergiAlt": null,
+          "VergiMuafiyet": null,
+          "Doviz": null
+        }
+      ]
+    },
+    "HareketID": 28075,
+    "DekontID": 190339,
+    "SubeID": 1,
+    "SirketID": 1,
+    "TipID": 10013,
+    "YevmiyeFisHareketID": null,
+    "KartID": 3658,
+    "Tarih": "2021-09-24T07:57:24.037",
+    "Vade": "2021-09-24T07:57:24.037",
+    "BA": "A",
+    "Tutar": 150.0,
+    "Miktar": 3.0,
+    "DovizID": 1,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": false,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 1,
+    "OlsID": 2,
+    "OlsTar": "2021-09-24T11:24:29.327",
+    "DgsID": 2,
+    "DgsTar": "2021-09-24T11:47:07.9325796+03:00",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": "Profil Seren Ahşap Ladin   3.0X4.3X300cm"
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+Bu işlem başarılı olduktan sonra KalemCok bilgisini eklemek için Kalemler metodunu kullanacaz
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                                 |
+| --------- | ------- | ----------------------------------------------------- |
+| KayitTipi | Integer | 2 Tüm API'de yeni kayıt düzenle anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer      | Tanım                                                 | Zorunlu |
+| --------- | ---------- | ----------------------------------------------------- | ------- |
+| KalemCok  | KalemModel | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+<aside class="success">
+KalemCok bilgisi eklendikten sonra Baslik düzenle metodu çağrılarak Başlık bilgisi yenilenmiş olur. Kalemleri düzenleme işlemi tamamlandıktan sonra Baslik metodunu KayitTipi "Düzelt" yaparak çağrılmalıdır.
+</aside>
+
+### Alınan Sipariş Kalem Silme
+
+Kalem bilgisinin DekontID ve HareketID'si set edildikten sonra silme işlemi yapabiliriz.
+
+```Json
+"KalemCok": {
+    "KalemTipi": "SiparisStok",
+    "DekontID": 190339,
+    "HareketID": 28075,
+}
+```
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=-1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Kalem/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "KalemCok": KalemModel
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "KalemCok": KalemModel
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Kalem/post?KayitTipi=-1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Kalem/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "KalemCok": "KalemModel"
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Kalem/post?KayitTipi=-1"
+
+payload="{
+        "KalemCok": "KalemModel"
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Kalem/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"KalemCok\": \"KalemModel\"
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "KalemTipi": 0,
+    "Cari": null,
+    "Stok": null,
+    "Banka": null,
+    "Kasa": null,
+    "CekSenet": null,
+    "SiparisCari": null,
+    "SiparisStok": null,
+    "HareketID": 0,
+    "DekontID": 0,
+    "SubeID": 0,
+    "SirketID": 0,
+    "TipID": 0,
+    "YevmiyeFisHareketID": null,
+    "KartID": 0,
+    "Tarih": "0001-01-01T00:00:00",
+    "Vade": "0001-01-01T00:00:00",
+    "BA": null,
+    "Tutar": 0.0,
+    "Miktar": 0.0,
+    "DovizID": 0,
+    "TutarDvz": 0.0,
+    "SozlesmeID": null,
+    "ProjeID": null,
+    "PlasiyerID": null,
+    "Durum": false,
+    "Aciklama": null,
+    "AciklamalarID": null,
+    "OnayDurum": 0,
+    "OlsID": 0,
+    "OlsTar": "0001-01-01T00:00:00",
+    "DgsID": 0,
+    "DgsTar": "0001-01-01T00:00:00",
+    "YedekD1": null,
+    "YedekD2": null,
+    "YedekD3": null,
+    "YedekS1": null,
+    "YedekS2": null,
+    "YedekS3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                         |
+| --------- | ------- | --------------------------------------------- |
+| KayitTipi | Integer | -1 Tüm API'de kayıt sil anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer      | Tanım                                                 | Zorunlu |
+| --------- | ---------- | ----------------------------------------------------- | ------- |
+| KalemCok  | KalemModel | KalemModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+<aside class="success">
+KalemCok bilgisi silindikten sonra Baslik düzenle metodu çağrılarak Başlık bilgisi yenilenmiş olur. Kalemleri düzenleme işlemi tamamlandıktan sonra Baslik metodunu KayitTipi "Düzelt" yaparak çağrılmalıdır.
+</aside>
+
+### Alınan Sipariş Başlık Silme
+
+#### BaslikModel
+
+Başlık bilgisi silinirken sadece DekontID'yi set etmek yeterli olacak.
+
+```Json
+"Baslik": {
+    "DekontID": 190339
+}
+```
+
+#### HTTP Request
+
+`POST https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1`
+
+```shell
+
+curl --location --request POST 'https://erp.aaro.com.tr/api/Baslik/post?KayitTipi=-1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+        "Baslik": BaslikModel,
+        }'
+
+```
+
+```javascript
+var axios = require("axios");
+var data =
+  '{
+        "Baslik": BaslikModel,
+}';
+
+var config = {
+  method: "post",
+  url: "https://localhost:44346/api/Baslik/post?KayitTipi=-1",
+  headers: {
+    "Content-Type": "application/json",
+    Authorization: "Bearer YOURTOKEN",
+  },
+  data: data,
+};
+
+axios(config)
+  .then(function (response) {
+    console.log(JSON.stringify(response.data));
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+```
+
+```csharp
+
+var client = new RestClient("https://localhost:44346/api/Baslik/post?KayitTipi=-1");
+client.Timeout = -1;
+var request = new RestRequest(Method.POST);
+request.AddParameter("application/json", "{
+        "Baslik": "BaslikModel",
+}",  ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+Console.WriteLine(response.Content);
+```
+
+```python
+
+import requests
+
+url = "https://localhost:44346/api/Baslik/post?KayitTipi=-1"
+
+payload="{
+        "Baslik": "BaslikModel",
+}"
+
+response = requests.request("POST", url, headers=headers, data = payload)
+
+print(response.text.encode('utf8'))
+
+
+```
+
+```java
+
+Unirest.setTimeouts(0, 0);
+HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik/post?KayitTipi=-1")
+  .header("Content-Type", "application/json")
+  .body("{
+        \"Baslik\": \"BaslikModel\",
+}")
+  .asString();
+
+```
+
+> Yukarıdaki kodlar aşağıdaki gibi bir JSON cevabı döndürmektedir:
+
+```json
+{
+  "Model": {
+    "DekontID": 0,
+    "Tarih": "0001-01-01T00:00:00",
+    "BelgeNo": null,
+    "RefBelgeNo": null,
+    "Vade": "0001-01-01T00:00:00",
+    "Tutar": 0.0,
+    "YedekT": 0.0,
+    "Seviye": 0,
+    "Durum": false,
+    "Aciklama": null,
+    "OnayDurum": 0,
+    "OlsTar": "0001-01-01T00:00:00",
+    "DgsTar": "0001-01-01T00:00:00",
+    "YedekN1": null,
+    "YedekN2": null,
+    "YedekN3": null,
+    "YedekC1": null,
+    "YedekC2": null,
+    "YedekC3": null,
+    "YedekI1": null,
+    "YedekI2": null,
+    "YedekI3": null,
+    "RefTeslimTarihi": null,
+    "Kapali": false,
+    "eFatura": false,
+    "eFaturaUUID": null,
+    "eFaturaProfilID": null,
+    "eFaturaTipID": null,
+    "eFaturaDurumID": null,
+    "eFaturaTurID": null,
+    "eArsivInternetSatisSablon": null,
+    "MagazaSiparisID": null,
+    "Etiket1ID": null,
+    "Etiket2ID": null,
+    "Etiket3ID": null,
+    "Etiket4ID": null,
+    "Etiket5ID": null,
+    "KopyaKaynakID": null,
+    "SubeID": 0,
+    "SirketID": 0,
+    "Sube2ID": null,
+    "TipID": 0,
+    "TipAltID": null,
+    "AciklamalarID": null,
+    "OlsID": 0,
+    "DgsID": 0,
+    "RefSozlesmeID": null,
+    "RefDepoID": null,
+    "RefKDVDahil": null,
+    "RefProjeID": null,
+    "RefPlasiyerID": null,
+    "RefDepo2ID": null,
+    "RefIthalatIhracatID": null,
+    "KartAdi": null
+  },
+  "Mesajlar": {
+    "Mesaj": ""
+  },
+  "Sonuc": true,
+  "Detay": ""
+}
+```
+
+#### Sorgu URL Parametreleri
+
+| Parametre | Değer   | Tanım                                         |
+| --------- | ------- | --------------------------------------------- |
+| KayitTipi | Integer | -1 Tüm API'de kayıt sil anlamına gelmektedir. |
+
+#### Sorgu Body JSON açıklaması
+
+| Parametre | Değer       | Tanım                                                  | Zorunlu |
+| --------- | ----------- | ------------------------------------------------------ | ------- |
+| Baslik    | BaslikModel | BaslikModel'in açıklamasına bakıp bilgi alabilirsiniz. | Evet    |
+
+# Başvurulacak Tablolar
+
+Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı enum tablolarına ulaşabilirsiniz.
+
+## KayitTipiEnum
+
+| Parametre | Değer | Açıklama |
+| --------- | ----- | -------- |
+| Tanimsiz  | -2    | Tanımsız |
+| Sil       | -1    | Sil      |
+| Oku       | 0     | Oku      |
+| Ekle      | 1     | Ekle     |
+| Duzelt    | 2     | Duzelt   |
+
+## HareketTurleriEnum
+
+| Parametre            | Değer | Açıklama               | Hareket Tipi |
+| -------------------- | ----- | ---------------------- | ------------ |
+| NakitTahsilat        | 5003  | Nakit Tahsilat         | (Tek-Tek)    |
+| NakitOdeme           | 5004  | Nakit Ödeme            | (Tek-Tek)    |
+| BankayaParaYatirma   | 5008  | Bankaya Para Yatırma   | (Tek-Tek)    |
+| BankadanParaCekme    | 5009  | Bankadan Para Çekme    | (Tek-Tek)    |
+| SatisFaturasi        | 10005 | Satış Faturası         | (Tek-Cok)    |
+| AlisFaturasi         | 10006 | Alış Faturası          | (Tek-Cok)    |
+| SatisIadeFaturasi    | 10007 | Satış İade Faturası    | (Tek-Cok)    |
+| AlisIadeFaturasi     | 10008 | Alış İade Faturası     | (Tek-Cok)    |
+| SatisIrsaliyesi      | 10009 | Satış İrsaliyesi       | (Tek-Cok)    |
+| AlisIrsaliyesi       | 10010 | Alış İrsaliyesi        | (Tek-Cok)    |
+| SatisIadeIrsaliyesi  | 10011 | Satış İade İrsaliyesi  | (Tek-Cok)    |
+| AlisIadeIrsaliyesi   | 10012 | Alış İade İrsaliyesi   | (Tek-Cok)    |
+| AlinanSiparis        | 10013 | Alınan Sipariş         | (Tek-Cok)    |
+| VerilenSiparis       | 10014 | Verilen Sipariş        | (Tek-Cok)    |
+| AlinanTeklif         | 10015 | Alinan Teklif          | (Tek-Cok)    |
+| VerilenTeklif        | 10016 | Verilen Teklif         | (Tek-Cok)    |
+| DepolarArasiTransfer | 10019 | Depolar Arası Transfer | (Tek-Cok)    |
