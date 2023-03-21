@@ -15574,6 +15574,5 @@ Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı e
 | VerilenTeklif        | 10016 | Verilen Teklif         | (Tek-Cok)    |
 | DepolarArasiTransfer | 10019 | Depolar Arası Transfer | (Tek-Cok)    |
 
-## YevmiyeFis Getir
-> Sistemde kayıtlı olan yevmiye fiş kartlarının görüntülendiği alandır.
+## Yevmiye Fis
 
