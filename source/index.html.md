@@ -15540,7 +15540,7 @@ HttpResponse<String> response = Unirest.post("https://localhost:44346/api/Baslik
 
 # Başvurulacak Tablolar
 
-Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı enum tablolarına ulaşabilirsiniz.
+Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı enum tablolarına ulaşabilirsiniz...
 
 ## KayitTipiEnum
 
@@ -15574,5 +15574,4 @@ Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı e
 | VerilenTeklif        | 10016 | Verilen Teklif         | (Tek-Cok)    |
 | DepolarArasiTransfer | 10019 | Depolar Arası Transfer | (Tek-Cok)    |
 
-# Yevmiye Fis
 
