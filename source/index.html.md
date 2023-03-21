@@ -15574,26 +15574,6 @@ Bu bölümde parametreler arasında Aaro'nun kendi kodlarında tanımladığı e
 | VerilenTeklif        | 10016 | Verilen Teklif         | (Tek-Cok)    |
 | DepolarArasiTransfer | 10019 | Depolar Arası Transfer | (Tek-Cok)    |
 
-## End-point: YevmiyeFis Getir
+## YevmiyeFis Getir
 Sistemde kayıtlı olan yevmiye fiş kartlarının görüntülendiği alandır.
-### Method: GET
->```
->{{BaseUrl}}/api/YevmiyeFis/Get
->```
-### Body (**raw**)
 
-```json
-
-```
-
-## End-point: YevmiyeFisHareketleri Getir
-Sistemde kayıtlı olan bütün yevmiye fiş hareketlerinin görüntülendiği alandır.
-### Method: GET
->```
->{{BaseUrl}}/api/YevmiyeFisHareketleri/Get
->```
-### Body (**raw**)
-
-```json
-
-```
