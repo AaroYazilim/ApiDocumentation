@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\test.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NewApiDoc\\test.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\NewDoc2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NewApiDoc\\NewDoc2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\NewDoc.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NewApiDoc\\NewDoc.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\test.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NewApiDoc\\test.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,12 +43,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NewDoc2.md",
+              "DocumentMoniker": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\NewDoc2.md",
+              "RelativeDocumentMoniker": "NewApiDoc\\NewDoc2.md",
+              "ToolTip": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\NewDoc2.md",
+              "RelativeToolTip": "NewApiDoc\\NewDoc2.md",
+              "ViewState": "AQIAAEQmAAAAAAAAAAAQwHcmAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-04-22T09:06:40.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "test.md",
               "DocumentMoniker": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\test.md",
               "RelativeDocumentMoniker": "NewApiDoc\\test.md",
               "ToolTip": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\test.md",
               "RelativeToolTip": "NewApiDoc\\test.md",
-              "ViewState": "AQIAAHU5AAAAAAAAAAAQwI85AAADAAAA",
+              "ViewState": "AQIAAGA5AAAAAAAAAAAQwIQ5AAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-04-22T08:43:27.312Z",
               "EditorCaption": ""
@@ -57,7 +74,7 @@
               "RelativeDocumentMoniker": "NewApiDoc\\NewDoc.md",
               "ToolTip": "C:\\Users\\aaroy\\source\\repos\\bahabarut\\ApiDocumentation\\NewApiDoc\\NewDoc.md",
               "RelativeToolTip": "NewApiDoc\\NewDoc.md",
-              "ViewState": "AQIAAI05AAAAAAAAAAAQwMY5AAAAAAAA",
+              "ViewState": "AQIAANAAAAAAAAAAAAAlwMY5AAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2024-04-22T08:42:19.872Z",
               "EditorCaption": ""
