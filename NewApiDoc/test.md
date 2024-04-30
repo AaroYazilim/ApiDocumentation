@@ -14778,6 +14778,109 @@ Stoktaki bir ürünü silmek içindir.
 
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+# 📁 Collection: Benzerlik 
+
+
+## End-point: Benzerlik Getir
+Sistemde kayıtlı olan bütün Benzerlik kartlarının görüntülendiği alandır.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrBenzerlik/GetKayit
+>```
+### Body (**raw**)
+
+```json
+
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Benzerlik Oluştur
+Yeni bir benzerlik oluşturmaktadır.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrBenzerlik/Post?KayitTipi=1
+>```
+### Body (**raw**)
+
+```json
+    {
+        "SirketID": 0,
+        "SubeID": 0,
+        "BenzerlikKodu": "000004",
+        "BenzerlikAdi": "api test benzerlik",
+        "Durum": true,
+        "Acikalama": "aciklama",
+        "Renk": "#000000",
+        "Sekil": 0
+    }
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|1|1 Tüm API'de yeni kayıt ekle anlamına gelmektedir.
+
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Benzerlik Düzenle
+Var olan benzerliği düzenlemeketedir.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrBenzerlik/Post?KayitTipi=2
+>```
+### Body (**raw**)
+
+```json
+    {
+        "BenzerlikID": 6,
+        "SirketID": 0,
+        "SubeID": 0,
+        "BenzerlikKodu": "000004",
+        "BenzerlikAdi": "api test benzerlikk",
+        "Durum": true,
+        "Acikalama": "aciklama",
+        "Renk": "#000000",
+        "Sekil": 0
+    }
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|2|2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir.
+
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Benzerlik Sil
+Mevcut benzerliği silmektedir.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrBenzerlik/Post?KayitTipi=-1
+>```
+### Body (**raw**)
+
+```json
+    {
+        "BenzerlikID": 7
+    }
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|-1|-1 bütün API'de yeni DELETE(sil) anlamına gelmektedir.
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: New Request
 ### Method: GET
