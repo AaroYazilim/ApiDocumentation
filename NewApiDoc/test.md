@@ -14881,6 +14881,98 @@ Mevcut benzerliği silmektedir.
 
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+# 📁 Collection: Operasyon Makine 
+
+## End-point: Operasyon Makine Getir
+Sistemde kayıtlı olan bütün Operasyon Makine kartlarının görüntülendiği alandır.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrOperasyonMakine/GetKayit
+>```
+### Body (**raw**)
+
+```json
+
+```
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Operasyon Makine Oluştur
+Yeni bir Operasyon Makine oluşturmaktadır.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrOperasyonMakine/Post?KayitTipi=1
+>```
+### Body (**raw**)
+
+```json
+	{
+		"OperasyonID": 9,
+		"MakineID": 4,
+		"Oncelik": 0
+	}
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|1|1 Tüm API'de yeni kayıt ekle anlamına gelmektedir.
+
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Operasyon Makine Düzenle
+Var olan Operasyon Makine yi düzenlemeketedir.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrOperasyonMakine/Post?KayitTipi=2
+>```
+### Body (**raw**)
+
+```json
+    {
+		"OperasyonMakineID": 15,
+		"OperasyonID": 7,
+		"MakineID": 8,
+		"Oncelik": 0
+    }
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|2|2 bütün API'de yeni PUT(düzenle) anlamına gelmektedir.
+
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Operasyon Makine Sil
+Mevcut Operasyon Makine yi silmektedir.
+### Method: POST
+>```
+>{{BaseUrl}}/api/UrOperasyonMakine/Post?KayitTipi=-1
+>```
+### Body (**raw**)
+
+```json
+    {
+        "OperasyonMakineID": 14
+    }
+```
+
+### Query Params
+
+|Param|value|Description
+|---|---|---|
+|KayitTipi|-1|-1 bütün API'de yeni DELETE(sil) anlamına gelmektedir.
+
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: New Request
 ### Method: GET
