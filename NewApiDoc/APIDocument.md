@@ -8609,6 +8609,48 @@ Mevcut bir iş emrinin silinmesi için kullanılmaktadır.
 
 ```
 
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+## End-point: İsEmriPlan Getir
+Aktif ve bitmemiş olan iş emri plan kayıtlarını getirir.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrIsEmriPlan/Get
+>```
+### Body (**raw**)
+
+```json
+```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+## End-point: TumIsEmriPlan Getir
+Geçmiş dahil tüm iş emri plan kayıtlarını getirir.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrIsEmriPlan/TumIsEmriPlan
+>```
+### Body (**raw**)
+
+```json
+```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+## End-point: AltIsEmri Getir
+Gönderdiğimiz IsEmriID parametresine bağlı olan iş emrinin eğer alt iş emri kayıtları varsa onları getirir.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrIsEmri/AltIsEmri?IsEmriID=0
+>```
+### Body (**raw**)
+
+```json
+```
+
+### Query Params
+
+|Param|value|
+|---|---|
+|IsEmriID|0|
+
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -14512,6 +14554,25 @@ Mevcut masraf merkezi silmektedir.
 
 ```
 
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: ReceteDetaylar Getir
+Gönderdiğimiz ReceteID parametresine bağlı reçetenin hammadde, operasyon ve mamul bilgilerini seviyeleriyle birlikte liste döndürür.
+### Method: GET
+>```
+>{{BaseUrl}}/api/UrRecete/ReceteDetaylariGetir?ReceteID=0
+>```
+### Body (**raw**)
+
+```json
+
+```
+
+### Query Params
+
+|Param|value|
+|---|---|
+|ReceteID|0|
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
